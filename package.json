@@ -1,10 +1,13 @@
 {
-  "name": "project-skeleton",
+  "name": "project-mansfield",
   "version": "0.1.0",
   "private": true,
   "contributors": [
-    "Team Member 1 <member1@middlebury.edu>",
-    "Team Member 2 <member2@middlebury.edu>"
+    "Jack Greenburg <jgreenburg@middlebury.edu>",
+    "Travis Emery <temery@middlebury.edu>",
+    "Chris Jaquez <cjaquez@middlebury.edu>",
+    "Samanyu Yadav <syadav@middlebury.edu>", 
+    "Abraham Merino <amerino@middlebury.edu>"
   ],
   "scripts": {
     "dev": "next dev",
