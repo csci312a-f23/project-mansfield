@@ -7,7 +7,8 @@
     "Travis Emery <temery@middlebury.edu>",
     "Chris Jaquez <cjaquez@middlebury.edu>",
     "Samanyu Yadav <syadav@middlebury.edu>", 
-    "Abraham Merino <amerino@middlebury.edu>"
+    "Abraham Merino <amerino@middlebury.edu>",
+    "Alex Oh <aoh@middlebury.edu>"
   ],
   "scripts": {
     "dev": "next dev",
