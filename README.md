@@ -8,7 +8,7 @@ This application should allow the user to place and track sports wagers. Each us
 
 ## Application link
 
-https://projectmansfield.csci312.dev
+https://mansfield.csci312.dev
 
 ## Creation
 
