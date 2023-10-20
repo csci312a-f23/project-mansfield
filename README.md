@@ -1,6 +1,14 @@
 # Project Skeleton
 
-TODO: Implement CI badges, provide a link to the deployed version of your application, and provide a brief description of the application functionality.
+![workflow status](https://github.com/csci312a-f23/project-mansfield/actions/workflows/node.js.yml/badge.svg)
+
+## Application
+
+This application should allow the user to place and track sports wagers. Each user will have an account that tracks their balance and history across site visits.
+
+## Application link
+
+https://projectmansfield.csci312.dev
 
 ## Creation
 
