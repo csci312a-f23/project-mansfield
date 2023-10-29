@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,12 @@ export default function Home({ setLoggedIn }) {
           </p>
           <div>
             <p onClick={logOut}>Log out</p>
+            <Link href="/user/openbets">
+              <p>View open bets</p>
+            </Link>
+            <Link href="/user/bethistory">
+              <p>View bet history</p>
+            </Link>
           </div>
         </div>
 
