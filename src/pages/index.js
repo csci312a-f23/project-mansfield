@@ -7,9 +7,12 @@ export default function Home(/* { setLoggedIn } */) {
     setLoggedIn(false);
   }; */
 
+  const user = "temery";
+  const balance = 1000;
+
   return (
     <div>
-      <Navbar /* balance={balance} user={user} */ />
+      <Navbar balance={balance} user={user} />
       <h2>Home</h2>
     </div>
   );

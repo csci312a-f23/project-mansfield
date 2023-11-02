@@ -1,12 +1,8 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import styles from "../styles/navigation.module.css";
 
-export default function Navbar(/* { handleNavClick /* , user, balance  } */) {
-  /*   const loaded = () => {
-    document.getElementById("myHperlink").innerHTML = splitText;
-
-  } */
+export default function Navbar({ user, balance }) {
   const router = useRouter();
   const handleNavClick = (string) => {
     if (string === "openbets") {
@@ -21,11 +17,11 @@ export default function Navbar(/* { handleNavClick /* , user, balance  } */) {
   };
 
   return (
-    <div /* onload={loaded} */ className={styles.navbar}>
+    <div className={styles.navbar}>
       <a onClick={() => handleNavClick("home")}>Mansfield</a>
       <div className={styles.dropdown}>
         <button type="button" className={styles.dropdownButton}>
-          (user) ▼
+          {user} ▼
         </button>
         <div className={styles.dropdownContent}>
           <a onClick={() => handleNavClick("bethistory")}>Bet History</a>
@@ -33,12 +29,12 @@ export default function Navbar(/* { handleNavClick /* , user, balance  } */) {
           <a onClick={() => handleNavClick("logout")}>Logout</a>
         </div>
       </div>
-      <div className={styles.balance}>$(balance)</div>
+      <div className={styles.balance}>${balance}</div>
     </div>
   );
 }
 
 Navbar.propTypes = {
-  // user: PropTypes.string.isRequired,
-  // balance: PropTypes.number.isRequired
+  user: PropTypes.string.isRequired,
+  balance: PropTypes.number.isRequired,
 };

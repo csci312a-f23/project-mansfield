@@ -7,9 +7,12 @@ export default function OpenBets(/* { setLoggedIn } */) {
     setLoggedIn(false);
   }; */
 
+  const user = "temery";
+  const balance = 1000;
+
   return (
     <div>
-      <Navbar /* balance={balance} user={user} */ />
+      <Navbar balance={balance} user={user} />
       <h2>Pending Bets</h2>
     </div>
   );
