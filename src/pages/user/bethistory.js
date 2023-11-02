@@ -1,21 +1,13 @@
-// import { useRouter } from "next/router";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Navbar from "../../components/navbar";
 
-export default function BetHistory(/* { setLoggedIn } */) {
-  // const user = "temery";
-  // const balance = 1000;
-
-  /*   const logout = () => {
-    setLoggedIn(false);
-  }; */
-
+export default function BetHistory({ setLoggedIn }) {
   const user = "temery";
   const balance = 1000;
 
   return (
     <div>
-      <Navbar balance={balance} user={user} />
+      <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />
       <h2>Bet History</h2>
     </div>
   );
@@ -23,5 +15,5 @@ export default function BetHistory(/* { setLoggedIn } */) {
 
 BetHistory.propTypes = {
   // loggedIn: PropTypes.bool.isRequired,
-  // setLoggedIn: PropTypes.func.isRequired,
+  setLoggedIn: PropTypes.func.isRequired,
 };

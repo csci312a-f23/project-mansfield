@@ -1,12 +1,11 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Link from "next/link";
 
-export default function LogIn(/* { setLoggedIn } */) {
-  /*   const logIn = () => {
+export default function LogIn({ setLoggedIn }) {
+  const logIn = () => {
     setLoggedIn(true);
-  }; */
+  };
 
   return (
     <>
@@ -19,9 +18,9 @@ export default function LogIn(/* { setLoggedIn } */) {
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <Link href="/">
+          <button type="button" onClick={logIn}>
             <p>login!</p>
-          </Link>
+          </button>
         </div>
       </main>
     </>
@@ -30,5 +29,5 @@ export default function LogIn(/* { setLoggedIn } */) {
 
 LogIn.propTypes = {
   // loggedIn: PropTypes.bool.isRequired,
-  // setLoggedIn: PropTypes.func.isRequired,
+  setLoggedIn: PropTypes.func.isRequired,
 };

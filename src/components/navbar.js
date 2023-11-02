@@ -2,13 +2,19 @@ import PropTypes from "prop-types";
 import { useRouter } from "next/router";
 import styles from "../styles/navigation.module.css";
 
-export default function Navbar({ user, balance }) {
+export default function Navbar({ user, balance, setLoggedIn }) {
   const router = useRouter();
+
+  const logOut = () => {
+    setLoggedIn(false);
+  };
+
   const handleNavClick = (string) => {
     if (string === "openbets") {
       router.push("/user/openbets");
     } else if (string === "logout") {
-      router.push("/login");
+      // router.push("/login");
+      logOut();
     } else if (string === "bethistory") {
       router.push("/user/bethistory");
     } else {
@@ -37,4 +43,5 @@ export default function Navbar({ user, balance }) {
 Navbar.propTypes = {
   user: PropTypes.string.isRequired,
   balance: PropTypes.number.isRequired,
+  setLoggedIn: PropTypes.func.isRequired,
 };
