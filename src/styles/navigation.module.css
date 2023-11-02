@@ -67,3 +67,11 @@ style container */
 .dropdown:hover .dropdownContent {
   display: block;
 }
+
+.balance {
+  float: right;
+  color: green;
+  padding: 15px 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}

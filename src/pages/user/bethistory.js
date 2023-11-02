@@ -3,6 +3,9 @@ import { useRouter } from "next/router";
 import Navbar from "../../components/navbar";
 
 export default function BetHistory(/* { setLoggedIn } */) {
+  // const user = "temery";
+  // const balance = 1000;
+
   const router = useRouter();
   const handleNavClick = (string) => {
     if (string === "openbets") {
@@ -22,7 +25,9 @@ export default function BetHistory(/* { setLoggedIn } */) {
 
   return (
     <div>
-      <Navbar handleNavClick={handleNavClick} />
+      <Navbar
+        handleNavClick={handleNavClick} /* balance={balance} user={user} */
+      />
       <h2>Bet History</h2>
     </div>
   );

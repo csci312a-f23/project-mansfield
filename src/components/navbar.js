@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import styles from "../styles/navigation.module.css";
 
-export default function Navbar({ handleNavClick }) {
+export default function Navbar({ handleNavClick /* , user, balance */ }) {
   return (
     <div className={styles.navbar}>
-      <a onClick={() => handleNavClick("home")}>Home</a>
+      <a onClick={() => handleNavClick("home")}>Mansfield</a>
       <div className={styles.dropdown}>
         <button type="button" className={styles.dropdownButton}>
-          Username ▼
+          (user) ▼
         </button>
         <div className={styles.dropdownContent}>
           <a onClick={() => handleNavClick("bethistory")}>Bet History</a>
@@ -15,11 +15,13 @@ export default function Navbar({ handleNavClick }) {
           <a onClick={() => handleNavClick("logout")}>Logout</a>
         </div>
       </div>
+      <div className={styles.balance}>$(balance)</div>
     </div>
   );
 }
 
 Navbar.propTypes = {
   handleNavClick: PropTypes.func.isRequired,
-  // username: PropTypes.string.isRequired
+  // user: PropTypes.string.isRequired,
+  // balance: PropTypes.number.isRequired
 };
