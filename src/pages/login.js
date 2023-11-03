@@ -18,7 +18,9 @@ export default function LogIn({ setLoggedIn }) {
 
       <main className={styles.main}>
         <div className={styles.description}>
-          <p onClick={logIn}>Login!</p>
+          <button type="button" onClick={logIn}>
+            <p>login!</p>
+          </button>
         </div>
       </main>
     </>
