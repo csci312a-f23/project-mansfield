@@ -7,15 +7,21 @@ export default function Home({ setLoggedIn, user }) {
   const balance = 1000;
   // const userconst = "temery";
 
-  return (
+  return user ? (
     <div className={styles.home}>
       <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />
       <Book />
     </div>
+  ) : (
+    <div />
   );
 }
 
 Home.propTypes = {
-  user: PropTypes.string.isRequired,
+  user: PropTypes.string,
   setLoggedIn: PropTypes.func.isRequired,
+};
+
+Home.defaultProps = {
+  user: null,
 };
