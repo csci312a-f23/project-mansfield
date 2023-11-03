@@ -10,7 +10,10 @@ export default function Book() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.selector}>heh</div>
+      <div className={styles.selector}>
+        <h4>Leagues</h4>
+        heh
+      </div>
       <div className={styles.book}>
         <Board cart={cart} setCart={setCart} />
       </div>

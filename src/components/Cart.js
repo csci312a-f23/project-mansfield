@@ -13,7 +13,20 @@ export default function Cart({ cart, setCart }) {
   return (
     <div className={styles.gameList}>
       <h4>Cart</h4>
-      {cart.length > 0 ? <ul>{cartArr}</ul> : <p>Make some bets!</p>}
+      {cart.length === 0 ? (
+        <p>Make some bets!</p>
+      ) : (
+        <>
+          <ul>{cartArr}</ul>
+          <button
+            className={styles.placebutton}
+            type="button"
+            onClick={() => setCart([])}
+          >
+            Place all bets
+          </button>
+        </>
+      )}
     </div>
   );
 }

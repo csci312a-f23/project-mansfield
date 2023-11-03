@@ -12,7 +12,7 @@ export default function Bet({ bet, cart, setCart }) {
       <h2>{`${bet.HomeTeam} vs. ${bet.AwayTeam}`}</h2>
       <div>
         <button type="button" onClick={removeBetFromCart}>
-          cancel bet
+          remove from cart
         </button>
       </div>
     </div>
