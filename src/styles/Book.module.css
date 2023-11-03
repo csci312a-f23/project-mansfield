@@ -6,6 +6,10 @@
   background-color: black;
 }
 
+.main h4 {
+  text-align: center;
+}
+
 .selector {
   flex: 3;
   background-color: var(--tertiary-rgb);
@@ -22,6 +26,11 @@
   background-color: var(--tertiary-rgb);
 }
 
+.gameList {
+  overflow: auto;
+  max-height: 100%;
+}
+
 .gameList ul {
   list-style: none;
 }
@@ -34,4 +43,29 @@
   border-radius: 10px;
   background-color: white;
   height: 20vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.game p {
+  padding: 25px;
+}
+
+.bet {
+  border-radius: 10px;
+  background-color: white;
+  height: 8vh;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.bet p {
+  padding: 25px;
+}
+
+.bet button {
+  justify-content: flex-end;
 }
