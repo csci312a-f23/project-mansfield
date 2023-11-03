@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import styles from "@/styles/Home.module.css";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import Book from "../components/Book";
 
-export default function Home({ setLoggedIn }) {
-  const user = "temery";
+export default function Home({ setLoggedIn, user }) {
   const balance = 1000;
+  // const userconst = "temery";
 
   return (
     <div className={styles.home}>
@@ -16,6 +16,6 @@ export default function Home({ setLoggedIn }) {
 }
 
 Home.propTypes = {
-  // loggedIn: PropTypes.bool.isRequired,
+  user: PropTypes.string.isRequired,
   setLoggedIn: PropTypes.func.isRequired,
 };

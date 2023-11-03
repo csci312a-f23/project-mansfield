@@ -22,7 +22,7 @@ https://www.w3schools.com/howto/default.asp */
   overflow: hidden;
 }
 
-/* dropdown button styling, for styles.dropdownbutton to
+/* dropdown button styling, for styles.dropdownButton to
 work it has to be within and object that has already used dropdown 
 style container */
 .dropdown .dropdownButton {

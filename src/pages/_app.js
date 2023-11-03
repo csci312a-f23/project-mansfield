@@ -5,13 +5,14 @@ import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    if (!loggedIn) {
-      router.push("/login");
-    } else {
+    if (loggedIn) {
       router.push("/");
+    } else {
+      router.push("/login");
     }
   }, [loggedIn]);
 
@@ -19,6 +20,8 @@ export default function App({ Component, pageProps }) {
     ...pageProps,
     loggedIn,
     setLoggedIn,
+    user,
+    setUser,
   };
 
   return <Component {...props} />;
