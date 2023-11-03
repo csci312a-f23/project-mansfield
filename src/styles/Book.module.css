@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+  max-height: 100%;
+  background-color: black;
+}
+
+.selector {
+  flex: 3;
+  background-color: var(--tertiary-rgb);
+}
+
+.book {
+  flex: 5;
+  background-color: var(--background-rgb);
+  overflow-y: scroll;
+}
+
+.cart {
+  flex: 4;
+  background-color: var(--tertiary-rgb);
+}
+
+.gameList ul {
+  list-style: none;
+}
+
+.gameList li {
+  padding: 5px;
+}
+
+.game {
+  border-radius: 10px;
+  background-color: white;
+  height: 20vh;
+}

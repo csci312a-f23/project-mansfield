@@ -5,6 +5,7 @@ https://www.w3schools.com/howto/default.asp */
   overflow: hidden;
   background-color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
+  height: fit-content;
 }
 
 /* styling for links in the navbar*/
