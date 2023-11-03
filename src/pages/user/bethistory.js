@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/Navbar";
 
-export default function BetHistory({ setLoggedIn }) {
-  const user = "temery";
+export default function BetHistory({ setLoggedIn, user }) {
   const balance = 1000;
+  // const userconst = "temery";
 
   return (
     <div>
@@ -14,6 +14,6 @@ export default function BetHistory({ setLoggedIn }) {
 }
 
 BetHistory.propTypes = {
-  // loggedIn: PropTypes.bool.isRequired,
+  user: PropTypes.string.isRequired,
   setLoggedIn: PropTypes.func.isRequired,
 };
