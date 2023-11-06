@@ -1,0 +1,79 @@
+/* W3Schools was very helpful for navbar styling 
+https://www.w3schools.com/howto/default.asp */
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: fit-content;
+}
+
+/* styling for links in the navbar*/
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* dropdown button styling, for styles.dropdownButton to
+work it has to be within and object that has already used dropdown 
+style container */
+.dropdown .dropdownButton {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 26px;
+  background-color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* styling when hovering over items in the navbar */
+.navbar a:hover,
+.dropdown:hover .dropdownButton {
+  background-color: rgb(255, 81, 0);
+}
+
+/* styling for items in the dropdown menu */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  min-width: 168px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+}
+
+/* styling for links inside the dropdown menu */
+.dropdownContent a {
+  float: none;
+  color: black;
+  padding: 15px 15px;
+  display: block;
+  text-align: left;
+}
+
+/* styling for when user hovers over dropdown links */
+.dropdownContent a:hover {
+  background-color: #f6f4f4;
+}
+
+/* make the dropdown show links when the user is hovering */
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.balance {
+  float: right;
+  color: green;
+  padding: 15px 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}

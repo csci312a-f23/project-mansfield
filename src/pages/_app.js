@@ -8,14 +8,16 @@ import {firebaseConfig} from "../firebase-config";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [loggedIn, setLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
+  const [currentPending, setCurrentPending] = useState(null);
 
   const app = initializeApp(firebaseConfig);
 
   useEffect(() => {
-    if (!loggedIn) {
-      router.push("/login");
-    } else {
+    if (loggedIn) {
       router.push("/");
+    } else {
+      router.push("/login");
     }
   }, [loggedIn]);
 
@@ -23,6 +25,10 @@ export default function App({ Component, pageProps }) {
     ...pageProps,
     loggedIn,
     setLoggedIn,
+    user,
+    setUser,
+    currentPending,
+    setCurrentPending,
   };
 
   return <Component {...props} />;

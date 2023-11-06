@@ -1,5 +1,7 @@
 import { knex } from "../../../../knex/knex";
 
+// GET, POST, and DELETE the active bets
+
 export default async function handler(req, res) {
   const { method, query } = req;
   switch (method) {

@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         break;
 
         }
-        case "PUT": {
+        case "POST": {
         // res.status(200).json({ message:"Success"});
             const postListRef = ref(db, `user`);
             const newPostRef = push(postListRef);
