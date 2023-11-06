@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import { getDatabase, ref, child, get, set} from "firebase/database";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,15 @@ export default function Home({ setLoggedIn }) {
   const logOut = () => {
     setLoggedIn(false);
   };
+  // const database = getDatabase();
+  // const dbRef = ref(getDatabase());
+  //     getDatabase(child(dbRef, `users/${userId}`)).then((snapshot)=> {
+  //       if (snapshot.exists()){
+  //         res.status(200).json(snapshot.val());
+  //       }else{
+  //         console.log("No snapshot found");
+  //       }
+  //     });
 
   return (
     <>

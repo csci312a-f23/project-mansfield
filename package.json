@@ -6,7 +6,7 @@
     "Jack Greenburg <jgreenburg@middlebury.edu>",
     "Travis Emery <temery@middlebury.edu>",
     "Chris Jaquez <cjaquez@middlebury.edu>",
-    "Samanyu Yadav <syadav@middlebury.edu>", 
+    "Samanyu Yadav <syadav@middlebury.edu>",
     "Abraham Merino <amerino@middlebury.edu>",
     "Alex Oh <aoh@middlebury.edu>"
   ],
@@ -19,6 +19,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^10.5.2",
     "next": "13.5.4",
     "prop-types": "^15.8.1",
     "react": "18.2.0",
