@@ -1,0 +1,2775 @@
+[
+  {
+    "id": "44ff6ef4222500377ee9500872935f93",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-08T00:00:00Z",
+    "home_team": "Northern Illinois Huskies",
+    "away_team": "Ball State Cardinals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Ball State Cardinals", "price": 3.9 },
+              { "name": "Northern Illinois Huskies", "price": 1.27 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Ball State Cardinals", "price": 1.87, "point": 10.5 },
+              {
+                "name": "Northern Illinois Huskies",
+                "price": 1.95,
+                "point": -10.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 43.5 },
+              { "name": "Under", "price": 1.91, "point": 43.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2c41675d4500514e1d9207ee24cb33c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-08T00:00:00Z",
+    "home_team": "Western Michigan Broncos",
+    "away_team": "Central Michigan Chippewas",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Central Michigan Chippewas", "price": 2.4 },
+              { "name": "Western Michigan Broncos", "price": 1.59 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Central Michigan Chippewas",
+                "price": 1.91,
+                "point": 3.5
+              },
+              {
+                "name": "Western Michigan Broncos",
+                "price": 1.91,
+                "point": -3.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 56.5 },
+              { "name": "Under", "price": 1.91, "point": 56.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e8a70c70ed8623c70ee070ea5312e1ee",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-08T00:30:00Z",
+    "home_team": "Buffalo Bulls",
+    "away_team": "Ohio Bobcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Buffalo Bulls", "price": 3.02 },
+              { "name": "Ohio Bobcats", "price": 1.4 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Buffalo Bulls", "price": 1.87, "point": 7.0 },
+              { "name": "Ohio Bobcats", "price": 1.95, "point": -7.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 43.5 },
+              { "name": "Under", "price": 1.91, "point": 43.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e3f1a0478045364a66dcd4af02225efb",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-09T00:00:00Z",
+    "home_team": "Miami (OH) RedHawks",
+    "away_team": "Akron Zips",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Akron Zips", "price": 6.9 },
+              { "name": "Miami (OH) RedHawks", "price": 1.11 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Akron Zips", "price": 1.91, "point": 17.5 },
+              { "name": "Miami (OH) RedHawks", "price": 1.91, "point": -17.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 43.5 },
+              { "name": "Under", "price": 1.91, "point": 43.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1171e9b089414e649e60aea0c173c92e",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-09T00:00:00Z",
+    "home_team": "Kent State Golden Flashes",
+    "away_team": "Bowling Green Falcons",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Bowling Green Falcons", "price": 1.3 },
+              { "name": "Kent State Golden Flashes", "price": 3.6 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Bowling Green Falcons", "price": 1.91, "point": -8.5 },
+              {
+                "name": "Kent State Golden Flashes",
+                "price": 1.91,
+                "point": 8.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 41.5 },
+              { "name": "Under", "price": 1.91, "point": 41.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e71c9bb1073af4c355c2fdf14e0c35ee",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-09T00:30:00Z",
+    "home_team": "Toledo Rockets",
+    "away_team": "Eastern Michigan Eagles",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Eastern Michigan Eagles", "price": 8.4 },
+              { "name": "Toledo Rockets", "price": 1.08 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Eastern Michigan Eagles",
+                "price": 1.95,
+                "point": 18.5
+              },
+              { "name": "Toledo Rockets", "price": 1.87, "point": -18.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 46.5 },
+              { "name": "Under", "price": 1.91, "point": 46.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ea5a7020f3f4659ccc4afe7a519d9757",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-10T00:30:00Z",
+    "home_team": "Louisiana Ragin Cajuns",
+    "away_team": "Southern Mississippi Golden Eagles",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Louisiana Ragin Cajuns", "price": 1.18 },
+              { "name": "Southern Mississippi Golden Eagles", "price": 5.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Louisiana Ragin Cajuns",
+                "price": 1.91,
+                "point": -12.5
+              },
+              {
+                "name": "Southern Mississippi Golden Eagles",
+                "price": 1.91,
+                "point": 12.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 54.5 },
+              { "name": "Under", "price": 1.91, "point": 54.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bb09c7dd03485afd0b9312de26c3f684",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-10T00:30:00Z",
+    "home_team": "Louisville Cardinals",
+    "away_team": "Virginia Cavaliers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Louisville Cardinals", "price": 1.06 },
+              { "name": "Virginia Cavaliers", "price": 9.6 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Louisville Cardinals", "price": 1.91, "point": -19.5 },
+              { "name": "Virginia Cavaliers", "price": 1.91, "point": 19.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 51.5 },
+              { "name": "Under", "price": 1.91, "point": 51.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7940024ce4a7758a0e96f30dc985dc34",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-10T23:30:00Z",
+    "home_team": "Louisville Cardinals",
+    "away_team": "Virginia Cavaliers",
+    "bookmakers": []
+  },
+  {
+    "id": "265497f27906116bddc4d23502969bbd",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T02:00:00Z",
+    "home_team": "SMU Mustangs",
+    "away_team": "North Texas Mean Green",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "North Texas Mean Green", "price": 7.4 },
+              { "name": "SMU Mustangs", "price": 1.1 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "North Texas Mean Green",
+                "price": 1.91,
+                "point": 16.5
+              },
+              { "name": "SMU Mustangs", "price": 1.91, "point": -16.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 67.5 },
+              { "name": "Under", "price": 1.91, "point": 67.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a5066ff34641c42c0b0940efc019bc6c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T03:45:00Z",
+    "home_team": "UNLV Rebels",
+    "away_team": "Wyoming Cowboys",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "UNLV Rebels", "price": 1.52 },
+              { "name": "Wyoming Cowboys", "price": 2.6 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "UNLV Rebels", "price": 1.91, "point": -4.5 },
+              { "name": "Wyoming Cowboys", "price": 1.91, "point": 4.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.95, "point": 52.5 },
+              { "name": "Under", "price": 1.87, "point": 52.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "765e27905042cff710141e1c9751da05",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T16:00:00Z",
+    "home_team": "Tulane Green Wave",
+    "away_team": "Tulsa Golden Hurricane",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Tulane Green Wave", "price": 1.04 },
+              { "name": "Tulsa Golden Hurricane", "price": 12.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Tulane Green Wave", "price": 1.91, "point": -22.5 },
+              { "name": "Tulsa Golden Hurricane", "price": 1.91, "point": 22.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 52.5 },
+              { "name": "Under", "price": 1.91, "point": 52.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e546e8d3b03ca7188518be18a6574f9b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Kentucky Wildcats",
+    "away_team": "Alabama Crimson Tide",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Alabama Crimson Tide", "price": 1.22 },
+              { "name": "Kentucky Wildcats", "price": 4.5 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Alabama Crimson Tide", "price": 1.91, "point": -10.5 },
+              { "name": "Kentucky Wildcats", "price": 1.91, "point": 10.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 48.5 },
+              { "name": "Under", "price": 1.91, "point": 48.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9b582ea8c9757f88b434031171513dc4",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Boston College Eagles",
+    "away_team": "Virginia Tech Hokies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Boston College Eagles", "price": 1.73 },
+              { "name": "Virginia Tech Hokies", "price": 2.14 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Boston College Eagles", "price": 1.87, "point": -2.5 },
+              { "name": "Virginia Tech Hokies", "price": 1.95, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.95, "point": 50.5 },
+              { "name": "Under", "price": 1.87, "point": 50.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1fcade7696feb83400689edc8991813f",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Clemson Tigers",
+    "away_team": "Georgia Tech Yellow Jackets",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Clemson Tigers", "price": 1.13 },
+              { "name": "Georgia Tech Yellow Jackets", "price": 6.2 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Clemson Tigers", "price": 1.91, "point": -14.5 },
+              {
+                "name": "Georgia Tech Yellow Jackets",
+                "price": 1.91,
+                "point": 14.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 55.5 },
+              { "name": "Under", "price": 1.91, "point": 55.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d87a462230bea384d577f84ae1033dd5",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Illinois Fighting Illini",
+    "away_team": "Indiana Hoosiers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Illinois Fighting Illini", "price": 1.43 },
+              { "name": "Indiana Hoosiers", "price": 2.88 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Illinois Fighting Illini",
+                "price": 1.95,
+                "point": -6.5
+              },
+              { "name": "Indiana Hoosiers", "price": 1.87, "point": 6.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 42.5 },
+              { "name": "Under", "price": 1.91, "point": 42.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3442c9431dfbada84fdf594f91a92adc",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Kansas Jayhawks",
+    "away_team": "Texas Tech Red Raiders",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Kansas Jayhawks", "price": 1.54 },
+              { "name": "Texas Tech Red Raiders", "price": 2.52 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Kansas Jayhawks", "price": 1.91, "point": -3.5 },
+              { "name": "Texas Tech Red Raiders", "price": 1.91, "point": 3.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 61.5 },
+              { "name": "Under", "price": 1.91, "point": 61.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9a0a078aeabfb2590fefe60f421ec241",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Nebraska Cornhuskers",
+    "away_team": "Maryland Terrapins",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Maryland Terrapins", "price": 1.78 },
+              { "name": "Nebraska Cornhuskers", "price": 2.06 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Maryland Terrapins", "price": 1.95, "point": -2.5 },
+              { "name": "Nebraska Cornhuskers", "price": 1.87, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.87, "point": 44.5 },
+              { "name": "Under", "price": 1.95, "point": 44.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9e7f7b12a9b0bd68c5a9e8cf10930dac",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "Penn State Nittany Lions",
+    "away_team": "Michigan Wolverines",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Michigan Wolverines", "price": 1.51 },
+              { "name": "Penn State Nittany Lions", "price": 2.62 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Michigan Wolverines", "price": 1.91, "point": -5.5 },
+              {
+                "name": "Penn State Nittany Lions",
+                "price": 1.91,
+                "point": 5.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 44.5 },
+              { "name": "Under", "price": 1.91, "point": 44.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b8d07cf3574c020c81f58e193391428",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "South Carolina Gamecocks",
+    "away_team": "Vanderbilt Commodores",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "South Carolina Gamecocks", "price": 1.14 },
+              { "name": "Vanderbilt Commodores", "price": 5.9 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "South Carolina Gamecocks",
+                "price": 1.91,
+                "point": -14.0
+              },
+              { "name": "Vanderbilt Commodores", "price": 1.91, "point": 14.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 57.5 },
+              { "name": "Under", "price": 1.91, "point": 57.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9814bae9cc91ebf5d095eff0aef57d95",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T17:00:00Z",
+    "home_team": "South Florida Bulls",
+    "away_team": "Temple Owls",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "South Florida Bulls", "price": 1.29 },
+              { "name": "Temple Owls", "price": 3.75 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "South Florida Bulls", "price": 1.87, "point": -7.5 },
+              { "name": "Temple Owls", "price": 1.95, "point": 7.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 66.5 },
+              { "name": "Under", "price": 1.91, "point": 66.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfd403377c1e375787c5181ed35e9fe0",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T18:00:00Z",
+    "home_team": "Liberty Flames",
+    "away_team": "Old Dominion Monarchs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Liberty Flames", "price": 1.15 },
+              { "name": "Old Dominion Monarchs", "price": 5.6 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Liberty Flames", "price": 1.91, "point": -13.5 },
+              { "name": "Old Dominion Monarchs", "price": 1.91, "point": 13.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 58.5 },
+              { "name": "Under", "price": 1.91, "point": 58.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2fb398add1f76b1a9d167c5571a55d26",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "Georgia State Panthers",
+    "away_team": "Appalachian State Mountaineers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Appalachian State Mountaineers", "price": 2.26 },
+              { "name": "Georgia State Panthers", "price": 1.66 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Appalachian State Mountaineers",
+                "price": 2.0,
+                "point": 2.5
+              },
+              { "name": "Georgia State Panthers", "price": 1.82, "point": -2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.93, "point": 60.5 },
+              { "name": "Under", "price": 1.89, "point": 60.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e0fe67a0e0e9f52b330ce49a1123856e",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "Colorado Buffaloes",
+    "away_team": "Arizona Wildcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arizona Wildcats", "price": 1.26 },
+              { "name": "Colorado Buffaloes", "price": 4.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arizona Wildcats", "price": 1.87, "point": -9.5 },
+              { "name": "Colorado Buffaloes", "price": 1.95, "point": 9.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 56.5 },
+              { "name": "Under", "price": 1.91, "point": 56.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "59ef7cbc1720a410a8d0a301c8b63491",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "Charlotte 49ers",
+    "away_team": "Memphis Tigers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Charlotte 49ers", "price": 4.65 },
+              { "name": "Memphis Tigers", "price": 1.2 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Charlotte 49ers", "price": 1.88, "point": 11.5 },
+              { "name": "Memphis Tigers", "price": 1.94, "point": -11.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.88, "point": 53.5 },
+              { "name": "Under", "price": 1.94, "point": 53.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12b554d15b33f042fdef99efabaf7489",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "James Madison Dukes",
+    "away_team": "UConn Huskies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "James Madison Dukes", "price": 1.02 },
+              { "name": "UConn Huskies", "price": 15.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "James Madison Dukes", "price": 1.89, "point": -26.5 },
+              { "name": "UConn Huskies", "price": 1.93, "point": 26.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.88, "point": 48.5 },
+              { "name": "Under", "price": 1.94, "point": 48.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "986c56de6ac593a0f221e561fa368e2c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "Wake Forest Demon Deacons",
+    "away_team": "NC State Wolfpack",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "NC State Wolfpack", "price": 1.75 },
+              { "name": "Wake Forest Demon Deacons", "price": 2.12 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "NC State Wolfpack", "price": 1.91, "point": -2.5 },
+              {
+                "name": "Wake Forest Demon Deacons",
+                "price": 1.91,
+                "point": 2.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 44.5 },
+              { "name": "Under", "price": 1.91, "point": 44.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6ac244beeb788b8867e7726b46d3cf2a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T19:00:00Z",
+    "home_team": "UL Monroe Warhawks",
+    "away_team": "Troy Trojans",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Troy Trojans", "price": 1.06 },
+              { "name": "UL Monroe Warhawks", "price": 10.2 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Troy Trojans", "price": 1.95, "point": -20.5 },
+              { "name": "UL Monroe Warhawks", "price": 1.88, "point": 20.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 45.5 },
+              { "name": "Under", "price": 1.91, "point": 45.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c34d064917febbb1c3d78f0543dd3d86",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:00:00Z",
+    "home_team": "Louisiana Tech Bulldogs",
+    "away_team": "Sam Houston State Bearkats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Louisiana Tech Bulldogs", "price": 1.29 },
+              { "name": "Sam Houston State Bearkats", "price": 3.75 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Louisiana Tech Bulldogs",
+                "price": 1.93,
+                "point": -8.5
+              },
+              {
+                "name": "Sam Houston State Bearkats",
+                "price": 1.89,
+                "point": 8.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.95, "point": 48.5 },
+              { "name": "Under", "price": 1.87, "point": 48.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eef3e124e744ea7b0fffdcced890ae3f",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:00:00Z",
+    "home_team": "Utah State Aggies",
+    "away_team": "Nevada Wolf Pack",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Nevada Wolf Pack", "price": 6.3 },
+              { "name": "Utah State Aggies", "price": 1.13 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Nevada Wolf Pack", "price": 1.91, "point": 15.5 },
+              { "name": "Utah State Aggies", "price": 1.91, "point": -15.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 56.5 },
+              { "name": "Under", "price": 1.91, "point": 56.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f6eee13abe9d75cf8e4a28d65c0c0726",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Kansas State Wildcats",
+    "away_team": "Baylor Bears",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Baylor Bears", "price": 9.9 },
+              { "name": "Kansas State Wildcats", "price": 1.06 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Baylor Bears", "price": 1.88, "point": 20.5 },
+              { "name": "Kansas State Wildcats", "price": 1.94, "point": -20.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 55.5 },
+              { "name": "Under", "price": 1.91, "point": 55.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ca899cbfe44abc34b00639a0eadd45ce",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Coastal Carolina Chanticleers",
+    "away_team": "Texas State Bobcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Coastal Carolina Chanticleers", "price": 2.02 },
+              { "name": "Texas State Bobcats", "price": 1.82 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Coastal Carolina Chanticleers",
+                "price": 1.91,
+                "point": 1.5
+              },
+              { "name": "Texas State Bobcats", "price": 1.91, "point": -1.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.93, "point": 60.5 },
+              { "name": "Under", "price": 1.89, "point": 60.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9d0b90077f688321bda5843485e05a41",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Middle Tennessee Blue Raiders",
+    "away_team": "Florida International Panthers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Florida International Panthers", "price": 4.65 },
+              { "name": "Middle Tennessee Blue Raiders", "price": 1.2 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Florida International Panthers",
+                "price": 1.88,
+                "point": 11.5
+              },
+              {
+                "name": "Middle Tennessee Blue Raiders",
+                "price": 1.94,
+                "point": -11.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.94, "point": 52.5 },
+              { "name": "Under", "price": 1.88, "point": 52.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c8e1e4f804281d6ddc92eb78344073dc",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Florida State Seminoles",
+    "away_team": "Miami Hurricanes",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Florida State Seminoles", "price": 1.13 },
+              { "name": "Miami Hurricanes", "price": 6.3 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Florida State Seminoles",
+                "price": 1.87,
+                "point": -14.5
+              },
+              { "name": "Miami Hurricanes", "price": 1.95, "point": 14.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 50.5 },
+              { "name": "Under", "price": 1.91, "point": 50.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0a2d9235e6129aff82d175419269666c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Iowa Hawkeyes",
+    "away_team": "Rutgers Scarlet Knights",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Iowa Hawkeyes", "price": 1.82 },
+              { "name": "Rutgers Scarlet Knights", "price": 2.02 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Iowa Hawkeyes", "price": 1.94, "point": -2.5 },
+              { "name": "Rutgers Scarlet Knights", "price": 1.88, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.85, "point": 28.5 },
+              { "name": "Under", "price": 1.96, "point": 28.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ddc27ea4c5de03e8df96483d763be88f",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Purdue Boilermakers",
+    "away_team": "Minnesota Golden Gophers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Minnesota Golden Gophers", "price": 1.85 },
+              { "name": "Purdue Boilermakers", "price": 1.98 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Minnesota Golden Gophers",
+                "price": 1.93,
+                "point": -1.5
+              },
+              { "name": "Purdue Boilermakers", "price": 1.89, "point": 1.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 45.5 },
+              { "name": "Under", "price": 1.91, "point": 45.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "47cee880ecff8460a17ad297441f3d52",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Missouri Tigers",
+    "away_team": "Tennessee Volunteers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Missouri Tigers", "price": 2.0 },
+              { "name": "Tennessee Volunteers", "price": 1.83 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Missouri Tigers", "price": 1.91, "point": 1.5 },
+              { "name": "Tennessee Volunteers", "price": 1.91, "point": -1.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.95, "point": 59.5 },
+              { "name": "Under", "price": 1.87, "point": 59.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "03c921882cb88b60d59345e7f06f334b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Navy Midshipmen",
+    "away_team": "UAB Blazers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Navy Midshipmen", "price": 2.76 },
+              { "name": "UAB Blazers", "price": 1.47 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Navy Midshipmen", "price": 1.88, "point": 5.5 },
+              { "name": "UAB Blazers", "price": 1.94, "point": -5.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 54.5 },
+              { "name": "Under", "price": 1.91, "point": 54.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c075cc8ca5e70885bcc090f19fa535e5",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Western Kentucky Hilltoppers",
+    "away_team": "New Mexico State Aggies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "New Mexico State Aggies", "price": 2.76 },
+              { "name": "Western Kentucky Hilltoppers", "price": 1.47 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "New Mexico State Aggies",
+                "price": 1.94,
+                "point": 4.5
+              },
+              {
+                "name": "Western Kentucky Hilltoppers",
+                "price": 1.88,
+                "point": -4.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.87, "point": 57.5 },
+              { "name": "Under", "price": 1.95, "point": 57.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9661f63fb6b6ba860b1c3d11906775b2",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Wisconsin Badgers",
+    "away_team": "Northwestern Wildcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Northwestern Wildcats", "price": 5.0 },
+              { "name": "Wisconsin Badgers", "price": 1.18 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Northwestern Wildcats", "price": 1.91, "point": 12.5 },
+              { "name": "Wisconsin Badgers", "price": 1.91, "point": -12.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.87, "point": 42.5 },
+              { "name": "Under", "price": 1.95, "point": 42.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dee77f88d8c334584f3723cb77b8f231",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "UCF Knights",
+    "away_team": "Oklahoma State Cowboys",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oklahoma State Cowboys", "price": 1.77 },
+              { "name": "UCF Knights", "price": 2.08 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Oklahoma State Cowboys",
+                "price": 1.91,
+                "point": -2.5
+              },
+              { "name": "UCF Knights", "price": 1.91, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.87, "point": 63.5 },
+              { "name": "Under", "price": 1.95, "point": 63.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b5a3ffb3534e5251180b365c3609795a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Syracuse Orange",
+    "away_team": "Pittsburgh Panthers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Pittsburgh Panthers", "price": 1.87 },
+              { "name": "Syracuse Orange", "price": 1.96 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Pittsburgh Panthers", "price": 1.95, "point": -1.5 },
+              { "name": "Syracuse Orange", "price": 1.87, "point": 1.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 37.5 },
+              { "name": "Under", "price": 1.91, "point": 37.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b57e22b5ed998ff131738c9405c12ab3",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T20:30:00Z",
+    "home_team": "Washington Huskies",
+    "away_team": "Utah Utes",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Utah Utes", "price": 3.9 },
+              { "name": "Washington Huskies", "price": 1.27 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Utah Utes", "price": 1.91, "point": 9.5 },
+              { "name": "Washington Huskies", "price": 1.91, "point": -9.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 54.5 },
+              { "name": "Under", "price": 1.91, "point": 54.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "de6ddbf48946d1b35032259e87083021",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T21:00:00Z",
+    "home_team": "Arkansas Razorbacks",
+    "away_team": "Auburn Tigers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arkansas Razorbacks", "price": 1.67 },
+              { "name": "Auburn Tigers", "price": 2.25 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arkansas Razorbacks", "price": 1.82, "point": -2.5 },
+              { "name": "Auburn Tigers", "price": 2.0, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.93, "point": 50.5 },
+              { "name": "Under", "price": 1.89, "point": 50.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0a1ebfeaead4256026b7dcc746e01c32",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T21:00:00Z",
+    "home_team": "California Golden Bears",
+    "away_team": "Washington State Cougars",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "California Golden Bears", "price": 1.9 },
+              { "name": "Washington State Cougars", "price": 1.93 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "California Golden Bears",
+                "price": 1.96,
+                "point": -1.5
+              },
+              {
+                "name": "Washington State Cougars",
+                "price": 1.85,
+                "point": 1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 59.5 },
+              { "name": "Under", "price": 1.91, "point": 59.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cc686d082faeebd947f99ced6ec7e800",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T21:00:00Z",
+    "home_team": "Florida Atlantic Owls",
+    "away_team": "East Carolina Pirates",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "East Carolina Pirates", "price": 4.1 },
+              { "name": "Florida Atlantic Owls", "price": 1.25 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "East Carolina Pirates", "price": 1.91, "point": 9.5 },
+              { "name": "Florida Atlantic Owls", "price": 1.91, "point": -9.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 45.5 },
+              { "name": "Under", "price": 1.91, "point": 45.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5d30c5e32097cf7769115830cd5dc6f7",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T22:00:00Z",
+    "home_team": "South Alabama Jaguars",
+    "away_team": "Arkansas State Red Wolves",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arkansas State Red Wolves", "price": 4.5 },
+              { "name": "South Alabama Jaguars", "price": 1.22 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Arkansas State Red Wolves",
+                "price": 1.95,
+                "point": 10.5
+              },
+              { "name": "South Alabama Jaguars", "price": 1.87, "point": -10.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.93, "point": 55.5 },
+              { "name": "Under", "price": 1.89, "point": 55.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d561393523b9c29d987a08dec2c0ad23",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-11T22:30:00Z",
+    "home_team": "Oregon State Beavers",
+    "away_team": "Stanford Cardinal",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oregon State Beavers", "price": 1.05 },
+              { "name": "Stanford Cardinal", "price": 10.8 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oregon State Beavers", "price": 1.91, "point": -21.0 },
+              { "name": "Stanford Cardinal", "price": 1.91, "point": 21.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.95, "point": 54.5 },
+              { "name": "Under", "price": 1.87, "point": 54.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a1596c9928e7c0e40dcab306fa4c0bfe",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "Houston Cougars",
+    "away_team": "Cincinnati Bearcats",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Cincinnati Bearcats", "price": 2.08 },
+              { "name": "Houston Cougars", "price": 1.77 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Cincinnati Bearcats", "price": 1.91, "point": 2.5 },
+              { "name": "Houston Cougars", "price": 1.91, "point": -2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 54.5 },
+              { "name": "Under", "price": 1.91, "point": 54.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c774b74fedb1ce9879d1ede13aa0df28",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "Colorado State Rams",
+    "away_team": "San Diego State Aztecs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Colorado State Rams", "price": 1.47 },
+              { "name": "San Diego State Aztecs", "price": 2.76 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Colorado State Rams", "price": 1.93, "point": -4.5 },
+              { "name": "San Diego State Aztecs", "price": 1.89, "point": 4.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 46.5 },
+              { "name": "Under", "price": 1.91, "point": 46.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a36945412710f0d99081514d9b9d609e",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "LSU Tigers",
+    "away_team": "Florida Gators",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Florida Gators", "price": 6.0 },
+              { "name": "LSU Tigers", "price": 1.14 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Florida Gators", "price": 1.88, "point": 14.0 },
+              { "name": "LSU Tigers", "price": 1.94, "point": -14.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 63.5 },
+              { "name": "Under", "price": 1.91, "point": 63.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c62cc568f4c0c1f95b0ba28888b390fb",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "Georgia Bulldogs",
+    "away_team": "Ole Miss Rebels",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Georgia Bulldogs", "price": 1.19 },
+              { "name": "Ole Miss Rebels", "price": 4.9 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Georgia Bulldogs", "price": 1.89, "point": -11.5 },
+              { "name": "Ole Miss Rebels", "price": 1.93, "point": 11.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 58.5 },
+              { "name": "Under", "price": 1.91, "point": 58.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "48f8b27b1b39e787ec553ef6cbc21055",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "Marshall Thundering Herd",
+    "away_team": "Georgia Southern Eagles",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Georgia Southern Eagles", "price": 1.71 },
+              { "name": "Marshall Thundering Herd", "price": 2.16 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Georgia Southern Eagles",
+                "price": 1.91,
+                "point": -2.5
+              },
+              {
+                "name": "Marshall Thundering Herd",
+                "price": 1.91,
+                "point": 2.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.94, "point": 57.5 },
+              { "name": "Under", "price": 1.88, "point": 57.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "762de32b236c1b3699e083d1346fb0ec",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:00:00Z",
+    "home_team": "Oklahoma Sooners",
+    "away_team": "West Virginia Mountaineers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oklahoma Sooners", "price": 1.17 },
+              { "name": "West Virginia Mountaineers", "price": 5.3 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oklahoma Sooners", "price": 1.91, "point": -12.5 },
+              {
+                "name": "West Virginia Mountaineers",
+                "price": 1.91,
+                "point": 12.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 58.5 },
+              { "name": "Under", "price": 1.91, "point": 58.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bfdd7bc263dd1fe28894b9557550e088",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:30:00Z",
+    "home_team": "Ohio State Buckeyes",
+    "away_team": "Michigan State Spartans",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Michigan State Spartans", "price": 21.0 },
+              { "name": "Ohio State Buckeyes", "price": 1.01 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Michigan State Spartans",
+                "price": 1.91,
+                "point": 30.5
+              },
+              { "name": "Ohio State Buckeyes", "price": 1.91, "point": -30.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 46.5 },
+              { "name": "Under", "price": 1.91, "point": 46.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b9a143e2158dd889b857ff241c2b554",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:30:00Z",
+    "home_team": "Texas A&M Aggies",
+    "away_team": "Mississippi State Bulldogs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Mississippi State Bulldogs", "price": 7.6 },
+              { "name": "Texas A&M Aggies", "price": 1.1 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Mississippi State Bulldogs",
+                "price": 1.91,
+                "point": 17.5
+              },
+              { "name": "Texas A&M Aggies", "price": 1.91, "point": -17.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 44.5 },
+              { "name": "Under", "price": 1.91, "point": 44.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bf50167a2ec9efd4ffe95ebfcb74a7e4",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:30:00Z",
+    "home_team": "UTSA Roadrunners",
+    "away_team": "Rice Owls",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Rice Owls", "price": 4.85 },
+              { "name": "UTSA Roadrunners", "price": 1.19 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Rice Owls", "price": 1.94, "point": 12.5 },
+              { "name": "UTSA Roadrunners", "price": 1.88, "point": -12.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 59.5 },
+              { "name": "Under", "price": 1.91, "point": 59.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8bc2cbf975c917cc6faac8a53bd185ea",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T00:30:00Z",
+    "home_team": "TCU Horned Frogs",
+    "away_team": "Texas Longhorns",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "TCU Horned Frogs", "price": 3.9 },
+              { "name": "Texas Longhorns", "price": 1.26 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "TCU Horned Frogs", "price": 1.91, "point": 10.0 },
+              { "name": "Texas Longhorns", "price": 1.91, "point": -10.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 53.5 },
+              { "name": "Under", "price": 1.91, "point": 53.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2274e85235cb0b8a478f8348d7807c7b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T01:00:00Z",
+    "home_team": "North Carolina Tar Heels",
+    "away_team": "Duke Blue Devils",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Duke Blue Devils", "price": 4.9 },
+              { "name": "North Carolina Tar Heels", "price": 1.19 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Duke Blue Devils", "price": 1.91, "point": 10.5 },
+              {
+                "name": "North Carolina Tar Heels",
+                "price": 1.91,
+                "point": -10.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 50.5 },
+              { "name": "Under", "price": 1.91, "point": 50.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3e2737371b47c392253ee78d0d76ef9a",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T02:00:00Z",
+    "home_team": "UCLA Bruins",
+    "away_team": "Arizona State Sun Devils",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Arizona State Sun Devils", "price": 7.8 },
+              { "name": "UCLA Bruins", "price": 1.09 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              {
+                "name": "Arizona State Sun Devils",
+                "price": 1.91,
+                "point": 17.5
+              },
+              { "name": "UCLA Bruins", "price": 1.91, "point": -17.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 46.5 },
+              { "name": "Under", "price": 1.91, "point": 46.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9527292d54a5987a741ce8389279a184",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T02:00:00Z",
+    "home_team": "Boise State Broncos",
+    "away_team": "New Mexico Lobos",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Boise State Broncos", "price": 1.03 },
+              { "name": "New Mexico Lobos", "price": 13.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Boise State Broncos", "price": 1.91, "point": -26.5 },
+              { "name": "New Mexico Lobos", "price": 1.91, "point": 26.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.93, "point": 60.5 },
+              { "name": "Under", "price": 1.89, "point": 60.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "426cc793480dd1f966c2fe2277cc743b",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T03:00:00Z",
+    "home_team": "BYU Cougars",
+    "away_team": "Iowa State Cyclones",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "BYU Cougars", "price": 3.3 },
+              { "name": "Iowa State Cyclones", "price": 1.35 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "BYU Cougars", "price": 1.91, "point": 7.0 },
+              { "name": "Iowa State Cyclones", "price": 1.91, "point": -7.0 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 43.5 },
+              { "name": "Under", "price": 1.91, "point": 43.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "75b38b0fdd4c25f8ed24ef693fff7ad4",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T03:15:00Z",
+    "home_team": "Oregon Ducks",
+    "away_team": "USC Trojans",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oregon Ducks", "price": 1.11 },
+              { "name": "USC Trojans", "price": 6.8 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Oregon Ducks", "price": 1.91, "point": -14.5 },
+              { "name": "USC Trojans", "price": 1.91, "point": 14.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 74.5 },
+              { "name": "Under", "price": 1.91, "point": 74.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "475e6c0672553ec1e56594151f8b0fb7",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T03:30:00Z",
+    "home_team": "San Jose State Spartans",
+    "away_team": "Fresno State Bulldogs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Fresno State Bulldogs", "price": 1.79 },
+              { "name": "San Jose State Spartans", "price": 2.05 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Fresno State Bulldogs", "price": 1.93, "point": -2.5 },
+              { "name": "San Jose State Spartans", "price": 1.89, "point": 2.5 }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.89, "point": 55.5 },
+              { "name": "Under", "price": 1.93, "point": 55.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7a8b0ee2d2614ec1d536d383be85485c",
+    "sport_key": "americanfootball_ncaaf",
+    "sport_title": "NCAAF",
+    "commence_time": "2023-11-12T04:00:00Z",
+    "home_team": "Hawaii Rainbow Warriors",
+    "away_team": "Air Force Falcons",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-11-06T04:07:31Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Air Force Falcons", "price": 1.07 },
+              { "name": "Hawaii Rainbow Warriors", "price": 9.0 }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Air Force Falcons", "price": 1.91, "point": -18.5 },
+              {
+                "name": "Hawaii Rainbow Warriors",
+                "price": 1.91,
+                "point": 18.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-11-06T04:07:31Z",
+            "outcomes": [
+              { "name": "Over", "price": 1.91, "point": 48.5 },
+              { "name": "Under", "price": 1.91, "point": 48.5 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
