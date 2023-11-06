@@ -1,3 +1,5 @@
+// This component displays upcoming games
+
 import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 // import games from "../../data/nfl2023reg7.json";
