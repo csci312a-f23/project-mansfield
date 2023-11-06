@@ -24,4 +24,10 @@ describe("End-to-end testing", () => {
   test("Render _app.js component", () => {
     render(<App Component={Home} />);
   });
+
+  test("Initial load redirects to login page", () => {
+    render(<App Component={Home} />);
+
+    expect(mockRouter.asPath).toBe("/login");
+  });
 });
