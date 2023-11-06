@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 
 export default function Leagues({ leaguesCollection, setCurrentLeague }) {
-  const leaguesCopy = [...leaguesCollection];
-
-  const leaguesList = leaguesCopy.map((league) => (
+  const leaguesList = [...leaguesCollection].map((league) => (
     <li key={league.key} onClick={() => setCurrentLeague(league)}>
       {league.title}
     </li>

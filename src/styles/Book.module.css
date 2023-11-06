@@ -37,11 +37,11 @@
 }
 
 .gameList li {
-  padding: 5px;
+  padding: 3px;
 }
 
 .game {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: white;
   height: 20vh;
   padding: 20px;

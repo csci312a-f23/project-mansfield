@@ -3,10 +3,10 @@ import styles from "@/styles/Book.module.css";
 import GameShape from "./GameShape";
 
 export default function Game({ game, cart, setCart }) {
-  const gameTime = new Date(game.DateTimeUTC);
+  const gameTime = new Date(game.commence_time);
 
   // don't forget to change this on  2 a.m. EST Sunday, March 10
-  gameTime.setHours(gameTime.getHours() - 4);
+  // gameTime.setHours(gameTime.getHours() - 4);
 
   function addBetToCart() {
     if (!cart.includes(game)) setCart([...cart, game]);
@@ -14,12 +14,13 @@ export default function Game({ game, cart, setCart }) {
 
   return (
     <div className={styles.game}>
-      <h2>{`${game.HomeTeam} vs. ${game.AwayTeam}`}</h2>
-      <p>
+      <h4>{`${game.home_team} vs. ${game.away_team}`}</h4>
+      <h4>{`${gameTime.toLocaleString()} EST`}</h4>
+      {/*       <p>
         Game time:
         <br />
         <span>{`${gameTime.toLocaleString()} EST`}</span>
-      </p>
+      </p> */}
       <div>
         <button
           type="button"

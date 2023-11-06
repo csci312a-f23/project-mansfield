@@ -7,6 +7,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
+  const [currentPending, setCurrentPending] = useState(null);
 
   useEffect(() => {
     if (loggedIn) {
@@ -22,6 +23,8 @@ export default function App({ Component, pageProps }) {
     setLoggedIn,
     user,
     setUser,
+    currentPending,
+    setCurrentPending,
   };
 
   return <Component {...props} />;

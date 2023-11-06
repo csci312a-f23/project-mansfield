@@ -3,14 +3,13 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Book from "../components/Book";
 
-export default function Home({ setLoggedIn, user }) {
+export default function Home({ setLoggedIn, user /* , setCurrentPending  */ }) {
   const balance = 1000;
-  // const userconst = "temery";
 
   return user ? (
     <div className={styles.home}>
       <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />
-      <Book />
+      <Book /* setCurrentPending={setCurrentPending} */ />
     </div>
   ) : (
     <div />
@@ -20,6 +19,7 @@ export default function Home({ setLoggedIn, user }) {
 Home.propTypes = {
   user: PropTypes.string,
   setLoggedIn: PropTypes.func.isRequired,
+  // setCurrentPending: PropTypes.func.isRequired,
 };
 
 Home.defaultProps = {

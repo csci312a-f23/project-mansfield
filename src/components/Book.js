@@ -1,3 +1,4 @@
+// import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 import { useState } from "react";
 import Board from "./Board";
@@ -5,11 +6,9 @@ import Cart from "./Cart";
 import Leagues from "./Leagues";
 import data from "../../data/selectedsports.json";
 
-export default function Book() {
-  // const { currentLeague, setCurrentLeague } = useState();
-
+export default function Book(/* { setCurrentPending } */) {
   const [cart, setCart] = useState([]);
-  const [league, setCurrentLeague] = useState(null);
+  const [currentLeague, setCurrentLeague] = useState(null);
   const leaguesCollection = data;
 
   return (
@@ -21,7 +20,17 @@ export default function Book() {
         />
       </div>
       <div className={styles.book}>
-        <Board cart={cart} setCart={setCart} league={league} />
+        {currentLeague ? (
+          <Board
+            cart={cart}
+            setCart={setCart}
+            currentLeague={
+              currentLeague
+            } /* setCurrentPending={setCurrentPending} */
+          />
+        ) : (
+          <h4>Upcoming Games</h4>
+        )}
       </div>
       <div className={styles.cart}>
         <Cart cart={cart} setCart={setCart} />
@@ -30,4 +39,6 @@ export default function Book() {
   );
 }
 
-Book.propTypes = {};
+Book.propTypes = {
+  // setCurrentPending: PropTypes.func.isRequired,
+};

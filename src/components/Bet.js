@@ -4,12 +4,12 @@ import GameShape from "./GameShape";
 
 export default function Bet({ bet, cart, setCart }) {
   function removeBetFromCart() {
-    setCart(cart.filter((b) => b.GameID !== bet.GameID));
+    setCart(cart.filter((b) => b.id !== bet.id));
   }
 
   return (
     <div className={styles.bet}>
-      <h2>{`${bet.HomeTeam} vs. ${bet.AwayTeam}`}</h2>
+      <h5>{`${bet.home_team} vs. ${bet.away_team}`}</h5>
       <div>
         <button type="button" onClick={removeBetFromCart}>
           remove from cart
