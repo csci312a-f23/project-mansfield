@@ -1,4 +1,4 @@
-import { getDatabase, ref, child, get, set} from "firebase/database";
+import { getDatabase, ref, child, get, set } from "firebase/database";
 
 // GET individual users data
 
@@ -8,16 +8,15 @@ export default async function handler(req, res) {
   switch (method) {
     case "GET": {
       const dbRef = ref(getDatabase());
-      getDatabase(child(dbRef, `users/`)).then((snapshot)=> {
-        if (snapshot.exists()){
+      getDatabase(child(dbRef, `users/`)).then((snapshot) => {
+        if (snapshot.exists()) {
           res.status(200).json(snapshot.val());
-        }else{
+        } else {
           console.log("No snapshot found");
         }
-      })
-      
-      break;
+      });
 
+      break;
     }
     case "PUT": {
       if (req.body.id !== parseInt(query.id, 10)) {
