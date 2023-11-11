@@ -1,27 +1,14 @@
-import { knex } from "../../../../knex/knex";
 // GET and POST bet history given the userId
 
 export default async function handler(req, res) {
-  const { method, query } = req;
+  const { method } = req;
   switch (method) {
     case "GET": {
-      let knexQuery = knex("Article");
-      if (Object.hasOwn(query, "titlesOnly")) {
-        knexQuery = knexQuery.select(["id", "title"]);
-      }
-      if (query.section) {
-        knexQuery = knexQuery.whereRaw("UPPER(SUBSTRING(title, 1, 1)) = ?", [
-          query.section,
-        ]);
-      }
-      const articles = await knexQuery;
-      res.status(200).json(articles);
+      // res.status(200).json(articles);
       break;
     }
     case "POST": {
-      const { id, ...article } = req.body;
-      const [insertedId] = await knex("Article").insert(article);
-      res.status(200).json({ ...article, id: insertedId });
+      // res.status(200).json({ ...article, id: insertedId });
       break;
     }
     default:

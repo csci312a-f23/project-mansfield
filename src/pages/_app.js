@@ -2,8 +2,7 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { initializeApp } from "firebase/app";
-import { firebaseConfig } from "../firebase-config";
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -11,7 +10,6 @@ export default function App({ Component, pageProps }) {
   const [user, setUser] = useState(null);
   const [currentPending, setCurrentPending] = useState(null);
 
-  const app = initializeApp(firebaseConfig);
 
   useEffect(() => {
     if (loggedIn) {
@@ -19,7 +17,7 @@ export default function App({ Component, pageProps }) {
     } else {
       router.push("/login");
     }
-  }, [loggedIn]);
+  }, [loggedIn, router]);
 
   const props = {
     ...pageProps,
