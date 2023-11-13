@@ -4,9 +4,11 @@ import Navbar from "../components/Navbar";
 
 import Book from "../components/Book";
 
+
 export default function Home({ setLoggedIn, user /* , setCurrentPending  */ }) {
   const balance = 1000;
-  // writeUserData("Alex",1,"aoh@middlebury.edu",1000);
+  
+  
   return user ? (
     <div className={styles.home}>
       <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />

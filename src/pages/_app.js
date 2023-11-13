@@ -2,14 +2,15 @@
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-
+import { initializeApp } from "firebase/app";
+import { firebaseConfig} from "../firebase-config";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
   const [currentPending, setCurrentPending] = useState(null);
-
+  initializeApp(firebaseConfig);
 
   useEffect(() => {
     if (loggedIn) {

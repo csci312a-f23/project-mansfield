@@ -30,9 +30,9 @@ function writeUserData(userkey, username, email, accountBalance) {
         email,
         accountBalance,
       });
-      return pushRef.key;
-    
-  }
+      
+    return pushRef.key;
+}
   
 export default async function handler(req, res) {
   const { method } = req;
