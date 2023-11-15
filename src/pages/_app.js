@@ -1,30 +1,23 @@
 /* eslint-disable react/jsx-props-no-spreading,react/prop-types */
 import "@/styles/globals.css";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import Router from "next/router";
 import { initializeApp } from "firebase/app";
-import { firebaseConfig} from "../firebase-config";
-
+import { firebaseConfig } from "../firebase-config";
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
   const [currentPending, setCurrentPending] = useState(null);
   initializeApp(firebaseConfig);
-  
-  const handleRouterPush = () => {
-    if (loggedIn) {
-      router.push("/");
-    } else {
-      router.push("/login");
-    }
-  };
-  useEffect(() => {
-    // Call the function immediately
-    handleRouterPush();
-  }, [loggedIn]);
 
+  useEffect(() => {
+    if (loggedIn) {
+      Router.push("/");
+    } else {
+      Router.push("/login");
+    }
+  }, [loggedIn]);
 
   const props = {
     ...pageProps,
