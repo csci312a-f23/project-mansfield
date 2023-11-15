@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 // import games from "../../data/nfl2023reg7.json";
 import Game from "./Game";
-import GameShape from "./GameShape";
-import NBA from "../../data/nba_odds.json";
-import NFL from "../../data/odds.json";
-import NHL from "../../data/nhl_odds.json";
-import NCAAF from "../../data/ncaaf_odds.json";
+import GameShape from "../shapes/GameShape";
+import NBA from "../../../data/nba_odds.json";
+import NFL from "../../../data/odds.json";
+import NHL from "../../../data/nhl_odds.json";
+import NCAAF from "../../../data/ncaaf_odds.json";
 
 export default function Board({ cart, setCart, currentLeague }) {
   if (currentLeague.title === "NBA") {

@@ -1,7 +1,7 @@
 // import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 // import GameShape from "./GameShape";
-import pendingBets from "../../data/pendingdata.json";
+import pendingBets from "../../../data/pendingdata.json";
 
 export default function Pending(/* { currentPending } */) {
   const gamesArr = [...pendingBets].map((g) => (

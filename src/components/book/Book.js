@@ -4,7 +4,7 @@ import { useState } from "react";
 import Board from "./Board";
 import Cart from "./Cart";
 import Leagues from "./Leagues";
-import data from "../../data/selectedsports.json";
+import data from "../../../data/selectedsports.json";
 
 export default function Book(/* { setCurrentPending } */) {
   const [cart, setCart] = useState([]);
