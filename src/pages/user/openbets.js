@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import Navbar from "../../components/Navbar";
-import Pending from "../../components/Pending";
-import GameShape from "../../components/GameShape";
+import Pending from "../../components/active/Pending";
+import GameShape from "../../components/shapes/GameShape";
 
 export default function OpenBets({ setLoggedIn, user, currentPending }) {
   const balance = 1000;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
-import GameShape from "./GameShape";
+import GameShape from "../shapes/GameShape";
 import Bet from "./Bet";
 
 export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
