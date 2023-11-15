@@ -45,8 +45,12 @@ export default function LoginForm({ user, setUser, setLoggedIn }) {
   );
 }
 
+LoginForm.defaultProps = {
+  user: "",
+};
+
 LoginForm.propTypes = {
-  user: PropTypes.string.isRequired,
+  user: PropTypes.string,
   setUser: PropTypes.func.isRequired,
   setLoggedIn: PropTypes.func.isRequired,
 };

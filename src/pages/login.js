@@ -10,8 +10,12 @@ export default function LogIn({ setLoggedIn, user, setUser }) {
   );
 }
 
+LogIn.defaultProps = {
+  user: "",
+};
+
 LogIn.propTypes = {
-  user: PropTypes.string.isRequired,
+  user: PropTypes.string,
   setUser: PropTypes.func.isRequired,
   setLoggedIn: PropTypes.func.isRequired,
 };
