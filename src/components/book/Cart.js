@@ -5,7 +5,7 @@ import Bet from "./Bet";
 
 export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
   const cartArr = cart.map((g) => (
-    <li key={g.GameID}>
+    <li key={g.id}>
       <Bet bet={g} cart={cart} setCart={setCart} />
     </li>
   ));

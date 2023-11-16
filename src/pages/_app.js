@@ -8,7 +8,7 @@ import { firebaseConfig } from "../firebase-config";
 export default function App({ Component, pageProps }) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
-  const [currentPending, setCurrentPending] = useState(null);
+  const [currentPending, setCurrentPending] = useState([]);
   initializeApp(firebaseConfig);
 
   useEffect(() => {
