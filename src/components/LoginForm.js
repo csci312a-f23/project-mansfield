@@ -19,17 +19,17 @@ export default function LoginForm({ user, setUser, setLoggedIn }) {
         />
       </div>
       <div className={styles.container}>
-        <label for="user">
+        <label>
           <b>Username</b>
         </label>
         <input
           type="text"
           name="user"
           placeholder="Enter Username"
-          value={user}
+          value={user || ""}
           onChange={(event) => setUser(event.target.value)}
         />
-        <label for="pass">
+        <label>
           <b>Password</b>
         </label>
         <input type="password" name="pass" placeholder="Enter Password" />
