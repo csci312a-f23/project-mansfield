@@ -11,7 +11,7 @@ import NHL from "../../../data/nhl_odds.json";
 import NCAAF from "../../../data/ncaaf_odds.json";
 
 export default function Board({ cart, setCart, currentLeague }) {
-  if (currentLeague.title === "NBA") {
+  if (currentLeague === "NBA") {
     const gamesArr = [...NBA].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
@@ -25,7 +25,7 @@ export default function Board({ cart, setCart, currentLeague }) {
       </div>
     );
   }
-  if (currentLeague.title === "NFL") {
+  if (currentLeague === "NFL") {
     const gamesArr = [...NFL].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
@@ -39,7 +39,7 @@ export default function Board({ cart, setCart, currentLeague }) {
       </div>
     );
   }
-  if (currentLeague.title === "NHL") {
+  if (currentLeague === "NHL") {
     const gamesArr = [...NHL].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
