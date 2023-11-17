@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/login/LoginForm";
 import styles from "../styles/login.module.css";
 
 export default function LogIn({ setLoggedIn, user, setUser }) {

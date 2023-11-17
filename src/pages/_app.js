@@ -3,9 +3,13 @@ import "@/styles/globals.css";
 import { useEffect, useState } from "react";
 import Router from "next/router";
 import { initializeApp } from "firebase/app";
+import { SessionProvider } from "next-auth/react";
 import { firebaseConfig } from "../firebase-config";
 
-export default function App({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
   const [currentPending, setCurrentPending] = useState([]);
@@ -29,5 +33,9 @@ export default function App({ Component, pageProps }) {
     setCurrentPending,
   };
 
-  return <Component {...props} />;
+  return (
+    <SessionProvider session={session}>
+      <Component {...props} />
+    </SessionProvider>
+  );
 }
