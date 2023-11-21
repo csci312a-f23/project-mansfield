@@ -1,23 +1,19 @@
-import PropTypes from "prop-types";
+import { useSession } from "next-auth/react";
 import Navbar from "../../components/Navbar";
 import Pending from "../../components/active/Pending";
-import GameShape from "../../components/shapes/GameShape";
 
-export default function OpenBets({ setLoggedIn, user, currentPending }) {
+export default function OpenBets() {
+  const { data: session } = useSession({
+    required: true,
+  });
   const balance = 1000;
   // const userconst = "temery";
 
   return (
     <div>
-      <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />
+      <Navbar balance={balance} user={session.user.name} />
       <h2>Pending Bets</h2>
-      <Pending pending={currentPending} />
+      <Pending />
     </div>
   );
 }
-
-OpenBets.propTypes = {
-  user: PropTypes.string.isRequired,
-  setLoggedIn: PropTypes.func.isRequired,
-  currentPending: PropTypes.arrayOf(GameShape).isRequired,
-};

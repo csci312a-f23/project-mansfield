@@ -1,14 +1,8 @@
-import PropTypes from "prop-types";
 import Image from "next/image";
 import styles from "../../styles/login.module.css";
 import LoginWidget from "./LoginWidget";
 
-// eslint-disable-next-line no-unused-vars
-export default function LoginForm({ user, setUser, setLoggedIn }) {
-  // const handleLoginClick = () => {
-  //   setLoggedIn(true);
-  // };
-
+export default function LoginForm() {
   return (
     <div className={styles.loginForm}>
       <div className={styles.imageContainer}>
@@ -26,13 +20,3 @@ export default function LoginForm({ user, setUser, setLoggedIn }) {
     </div>
   );
 }
-
-LoginForm.defaultProps = {
-  user: "",
-};
-
-LoginForm.propTypes = {
-  user: PropTypes.string,
-  setUser: PropTypes.func.isRequired,
-  setLoggedIn: PropTypes.func.isRequired,
-};

@@ -1,12 +1,16 @@
 import PropTypes from "prop-types";
 import { useRouter } from "next/router";
+import { signOut } from "next-auth/react";
 import styles from "../styles/navigation.module.css";
 
-export default function Navbar({ user, balance, setLoggedIn }) {
+export default function Navbar({ user, balance }) {
+  // const { data: session } = useSession();
   const router = useRouter();
 
   const logOut = () => {
-    setLoggedIn(false);
+    signOut({
+      callbackUrl: `${window.location.origin}/login`,
+    });
   };
 
   const handleNavClick = (string) => {
@@ -43,5 +47,4 @@ export default function Navbar({ user, balance, setLoggedIn }) {
 Navbar.propTypes = {
   user: PropTypes.string.isRequired,
   balance: PropTypes.number.isRequired,
-  setLoggedIn: PropTypes.func.isRequired,
 };
