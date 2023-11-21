@@ -13,7 +13,7 @@ export default function Home() {
   return session ? (
     <div className={styles.home}>
       <Navbar balance={balance} user={session.user.name} />
-      <Book /* setCurrentPending={setCurrentPending} */ />
+      <Book />
     </div>
   ) : (
     <div>Redirecting</div>
