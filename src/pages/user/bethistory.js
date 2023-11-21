@@ -9,9 +9,11 @@ export default function BetHistory() {
   const balance = 1000;
 
   return (
-    <div>
-      <Navbar balance={balance} user={session.user.name} />
-      <h2>Bet History</h2>
-    </div>
+    session && (
+      <div>
+        <Navbar balance={balance} user={session.user.name} />
+        <h2>Bet History</h2>
+      </div>
+    )
   );
 }

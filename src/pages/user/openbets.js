@@ -10,10 +10,12 @@ export default function OpenBets() {
   // const userconst = "temery";
 
   return (
-    <div>
-      <Navbar balance={balance} user={session.user.name} />
-      <h2>Pending Bets</h2>
-      <Pending />
-    </div>
+    session && (
+      <div>
+        <Navbar balance={balance} user={session.user.name} />
+        <h2>Pending Bets</h2>
+        <Pending />
+      </div>
+    )
   );
 }
