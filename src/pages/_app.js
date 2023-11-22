@@ -4,19 +4,18 @@ import { initializeApp } from "firebase/app";
 import { SessionProvider } from "next-auth/react";
 import { firebaseConfig } from "../firebase-config";
 
-export default function App({
-  Component,
-  pageProps: { session, ...pageProps },
-}) {
+export default function App({ Component, pageProps }) {
   initializeApp(firebaseConfig);
 
-  const props = {
-    ...pageProps,
-  };
-
+  /*
+  I am not passing any session={session}. Be advised.
+  
+  Passing the session page prop to the <SessionProvider> allows you to avoid checking
+  the session twice on pages that support both server and client side rendering.
+  */
   return (
-    <SessionProvider session={session}>
-      <Component {...props} />
+    <SessionProvider>
+      <Component {...pageProps} />
     </SessionProvider>
   );
 }
