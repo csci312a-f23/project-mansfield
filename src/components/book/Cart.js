@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
-import GameShape from "../shapes/GameShape";
+import BetShape from "../shapes/BetShape";
 import Bet from "./Bet";
 
-export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
+export default function Cart({ cart, setCart, setCurrentPending }) {
   const cartArr = cart.map((g) => (
     <li key={g.id}>
       <Bet bet={g} cart={cart} setCart={setCart} />
@@ -11,8 +11,10 @@ export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
   ));
 
   const setCartPend = () => {
-    // setCurrentPending(cart);
+    setCurrentPending(cart.filter((b) => b.Amount !== 0));
+    const newCart = cart.filter((b) => b.Amount === 0);
     setCart([]);
+    setCart(newCart);
   };
 
   return (
@@ -28,7 +30,7 @@ export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
             type="button"
             onClick={() => setCartPend([])}
           >
-            Place all bets
+            Place Bets
           </button>
         </>
       )}
@@ -37,7 +39,7 @@ export default function Cart({ cart, setCart /* , setCurrentPending  */ }) {
 }
 
 Cart.propTypes = {
-  cart: PropTypes.arrayOf(GameShape).isRequired,
+  cart: PropTypes.arrayOf(BetShape).isRequired,
   setCart: PropTypes.func.isRequired,
-  // setCurrentPending: PropTypes.func.isRequired,
+  setCurrentPending: PropTypes.func.isRequired,
 };

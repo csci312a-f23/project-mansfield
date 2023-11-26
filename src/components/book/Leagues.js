@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
+import styles from "@/styles/Book.module.css";
 
 export default function Leagues({ leaguesCollection, setCurrentLeague }) {
   const leaguesList = [...leaguesCollection].map((league) => (
-    <li key={league.key} onClick={() => setCurrentLeague(league.title)}>
+    <button
+      key={league.key}
+      type="button"
+      onClick={() => setCurrentLeague(league.title)}
+    >
       {league.title}
-    </li>
+    </button>
   ));
 
   return (
     <div>
       <h4>Leagues</h4>
-      <ul>{leaguesList}</ul>
+      <div className={styles.leagues}>{leaguesList}</div>
     </div>
   );
 }

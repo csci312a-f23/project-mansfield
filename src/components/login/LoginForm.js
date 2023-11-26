@@ -7,7 +7,7 @@ export default function LoginForm() {
     <div className={styles.loginForm}>
       <div className={styles.imageContainer}>
         <Image
-          src="/favicon.ico"
+          src="/mountains-svgrepo-com.svg"
           alt="mansfield"
           width={100}
           height={100}

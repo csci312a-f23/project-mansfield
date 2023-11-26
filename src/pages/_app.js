@@ -2,10 +2,19 @@
 import "@/styles/globals.css";
 import { initializeApp } from "firebase/app";
 import { SessionProvider } from "next-auth/react";
+import { useState } from "react";
+import Head from "next/head";
 import { firebaseConfig } from "../firebase-config";
 
 export default function App({ Component, pageProps }) {
   initializeApp(firebaseConfig);
+  const [currentPending, setCurrentPending] = useState([]);
+
+  const props = {
+    ...pageProps,
+    currentPending,
+    setCurrentPending,
+  };
 
   /*
   I am not passing any session={session}. Be advised.
@@ -15,7 +24,12 @@ export default function App({ Component, pageProps }) {
   */
   return (
     <SessionProvider>
-      <Component {...pageProps} />
+      <Head>
+        <title>Mansfield Sports Book</title>
+        <link rel="icon" href="/mountains-svgrepo-com.svg" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </Head>
+      <Component {...props} />
     </SessionProvider>
   );
 }
