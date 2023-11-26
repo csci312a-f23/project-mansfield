@@ -11,7 +11,7 @@ export default function LoginWidget() {
           })
         }
       >
-        Sign in
+        Login
       </button>
     </div>
   );
