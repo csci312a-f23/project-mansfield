@@ -1,19 +1,19 @@
-import PropTypes from "prop-types";
+import { useSession } from "next-auth/react";
 import Navbar from "../../components/Navbar";
 
-export default function BetHistory({ setLoggedIn, user }) {
+export default function BetHistory() {
+  const { data: session } = useSession({
+    required: true,
+  });
+
   const balance = 1000;
-  // const userconst = "temery";
 
   return (
-    <div>
-      <Navbar balance={balance} user={user} setLoggedIn={setLoggedIn} />
-      <h2>Bet History</h2>
-    </div>
+    session && (
+      <div>
+        <Navbar balance={balance} user={session.user.name} />
+        <h2>Bet History</h2>
+      </div>
+    )
   );
 }
-
-BetHistory.propTypes = {
-  user: PropTypes.string.isRequired,
-  setLoggedIn: PropTypes.func.isRequired,
-};

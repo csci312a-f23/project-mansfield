@@ -8,8 +8,8 @@
 .loginForm {
   border: 3px solid #f1f1f1;
   background-color: #969696;
-  width: 40%;
-  height: 60%;
+  width: 30%;
+  height: 40%;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -17,24 +17,6 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 3%;
-}
-
-.loginForm input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.loginForm input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }
 
 .loginForm button {
@@ -61,10 +43,19 @@
 .loginForm img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 /* Add padding to containers */
 .loginForm .container {
   padding: 16px;
+}
+
+.login h1 {
+  padding: 40px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  font-size: 50px;
+  font-family: fantasy;
 }

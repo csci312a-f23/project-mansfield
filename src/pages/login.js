@@ -1,17 +1,11 @@
-import PropTypes from "prop-types";
-import LoginForm from "../components/LoginForm";
+import LoginForm from "../components/login/LoginForm";
 import styles from "../styles/login.module.css";
 
-export default function LogIn({ setLoggedIn, user, setUser }) {
+export default function LogIn() {
   return (
     <div className={styles.login}>
-      <LoginForm user={user} setUser={setUser} setLoggedIn={setLoggedIn} />
+      <h1>Mansfield Sports Book</h1>
+      <LoginForm />
     </div>
   );
 }
-
-LogIn.propTypes = {
-  user: PropTypes.string.isRequired,
-  setUser: PropTypes.func.isRequired,
-  setLoggedIn: PropTypes.func.isRequired,
-};

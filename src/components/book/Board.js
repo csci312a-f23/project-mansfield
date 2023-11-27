@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 // import games from "../../data/nfl2023reg7.json";
 import Game from "./Game";
-import GameShape from "./GameShape";
-import NBA from "../../data/nba_odds.json";
-import NFL from "../../data/odds.json";
-import NHL from "../../data/nhl_odds.json";
-import NCAAF from "../../data/ncaaf_odds.json";
+import BetShape from "../shapes/BetShape";
+import NBA from "../../../data/nba_odds.json";
+import NFL from "../../../data/odds.json";
+import NHL from "../../../data/nhl_odds.json";
+import NCAAF from "../../../data/ncaaf_odds.json";
 
 export default function Board({ cart, setCart, currentLeague }) {
-  if (currentLeague.title === "NBA") {
+  if (currentLeague === "NBA") {
     const gamesArr = [...NBA].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
@@ -25,7 +25,7 @@ export default function Board({ cart, setCart, currentLeague }) {
       </div>
     );
   }
-  if (currentLeague.title === "NFL") {
+  if (currentLeague === "NFL") {
     const gamesArr = [...NFL].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
@@ -39,7 +39,7 @@ export default function Board({ cart, setCart, currentLeague }) {
       </div>
     );
   }
-  if (currentLeague.title === "NHL") {
+  if (currentLeague === "NHL") {
     const gamesArr = [...NHL].map((g) => (
       <li key={g.id}>
         <Game game={g} cart={cart} setCart={setCart} />
@@ -69,7 +69,7 @@ export default function Board({ cart, setCart, currentLeague }) {
 }
 
 Board.propTypes = {
-  cart: PropTypes.arrayOf(GameShape).isRequired,
+  cart: PropTypes.arrayOf(BetShape).isRequired,
   setCart: PropTypes.func.isRequired,
   currentLeague: PropTypes.string.isRequired,
 };
