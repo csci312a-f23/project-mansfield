@@ -14,7 +14,6 @@ const BetShape = PropTypes.shape({
   Odds: PropTypes.number.isRequired,
   Amount: PropTypes.number.isRequired,
   WinAmount: PropTypes.number.isRequired,
-  Payout: PropTypes.number.isRequired,
   GameID: PropTypes.string.isRequired,
   AwayTeam: PropTypes.string.isRequired,
   HomeTeam: PropTypes.string.isRequired,
