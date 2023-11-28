@@ -9,15 +9,14 @@ export default function Game({ game, cart, setCart }) {
   // don't forget to change this on  2 a.m. EST Sunday, March 10
   // gameTime.setHours(gameTime.getHours() - 4);
 
-  function addBetToCart(betType, spread, total) {
+  function addBetToCart(betType, spread, total, odds) {
     const newBet = {
       BetID: 0,
       UserID: 69,
       BetType: betType,
-      Odds: 1.9,
+      Odds: odds,
       Amount: 0,
       WinAmount: 0,
-      Payout: 0,
       GameID: game.id,
       AwayTeam: game.away_team,
       HomeTeam: game.home_team,
@@ -44,23 +43,47 @@ export default function Game({ game, cart, setCart }) {
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("spread home", -7, 0)}
+            onClick={() =>
+              addBetToCart(
+                "spread home",
+                game?.bookmakers[0]?.markets[1]?.outcomes[1]?.point,
+                0,
+                game?.bookmakers[0]?.markets[1]?.outcomes[1]?.price,
+              )
+            }
           >
-            {`-7 @ ${"-110"}`}
+            {`${
+              game?.bookmakers[0]?.markets[1]?.outcomes[1]?.point > 0
+                ? `+ ${game?.bookmakers[0]?.markets[1]?.outcomes[1]?.point}`
+                : game?.bookmakers[0]?.markets[1]?.outcomes[1]?.point
+            } @ ${game?.bookmakers[0]?.markets[1]?.outcomes[1]?.price}`}
           </button>
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("ML home", 0, 0)}
+            onClick={() =>
+              addBetToCart(
+                "ML home",
+                0,
+                0,
+                game?.bookmakers[0]?.markets[0]?.outcomes[1]?.price,
+              )
+            }
           >
-            {`ML @ ${"-360"}`}
+            {`ML @ ${game?.bookmakers[0]?.markets[0]?.outcomes[1]?.price}`}
           </button>
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("total over", 0, 54.5)}
+            onClick={() =>
+              addBetToCart(
+                "total over",
+                0,
+                game?.bookmakers[0]?.markets[2]?.outcomes[0]?.point,
+              )
+            }
           >
-            {`Over ${"54.5"} @ ${"-110"}`}
+            {`Over ${game?.bookmakers[0]?.markets[2]?.outcomes[0]?.point} @ ${game?.bookmakers[0]?.markets[2]?.outcomes[0]?.price}`}
           </button>
         </p>
         <p>
@@ -68,23 +91,48 @@ export default function Game({ game, cart, setCart }) {
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("spread away", 7, 0)}
+            onClick={() =>
+              addBetToCart(
+                "spread away",
+                game?.bookmakers[0]?.markets[1]?.outcomes[0]?.point,
+                0,
+                game?.bookmakers[0]?.markets[1]?.outcomes[0]?.price,
+              )
+            }
           >
-            {`+7 @ ${"-110"}`}
+            {`${
+              game?.bookmakers[0]?.markets[1]?.outcomes[0]?.point > 0
+                ? `+ ${game?.bookmakers[0]?.markets[1]?.outcomes[0]?.point}`
+                : game?.bookmakers[0]?.markets[1]?.outcomes[0]?.point
+            } @ ${game?.bookmakers[0]?.markets[1]?.outcomes[0]?.price}`}
           </button>
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("ML away", 0, 0)}
+            onClick={() =>
+              addBetToCart(
+                "ML away",
+                0,
+                0,
+                game?.bookmakers[0]?.markets[0]?.outcomes[0]?.price,
+              )
+            }
           >
-            {`ML @ ${"+270"}`}
+            {`ML @ ${game?.bookmakers[0]?.markets[0]?.outcomes[0]?.price}`}
           </button>
           <button
             type="button"
             /* disabled={cart.includes(game)} */
-            onClick={() => addBetToCart("total under", 0, 54.5)}
+            onClick={() =>
+              addBetToCart(
+                "total under",
+                0,
+                game?.bookmakers[0]?.markets[2]?.outcomes[1]?.point,
+                game?.bookmakers[0]?.markets[2]?.outcomes[1]?.price,
+              )
+            }
           >
-            {`Under ${"54.5"} @ ${"-110"}`}
+            {`Under ${game?.bookmakers[0]?.markets[2]?.outcomes[1]?.point} @ ${game?.bookmakers[0]?.markets[2]?.outcomes[1]?.price}`}
           </button>
         </p>
       </div>

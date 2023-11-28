@@ -9,7 +9,7 @@ export default function Pending({ currentPending }) {
         bet.CommenceTime,
       ).toLocaleString()} EST: bet type:${bet.BetType} wager:${
         bet.Amount
-      } to win:${bet.WinAmount}`}
+      } to win:${bet.WinAmount} ${bet.Odds}`}
     </li>
   ));
 
