@@ -57,12 +57,7 @@ export default function Bet({ bet, cart, setCart }) {
   };
 
   const removeBetFromCart = () => {
-    /* const tempgame = cart.filter((b) => (b.GameID === bet.GameID));
-    const tempbet = tempgame.filter((b) => (b.BetType === bet.BetType)); */
-
-    // const temp = cart.filter((b) => b.GameID !== bet.GameID);
-    // setCart(temp.filter((b) => b.BetType !== bet.BetType));
-    setCart(cart.filter((b) => b.GameID !== bet.GameID));
+    setCart(cart.filter((b) => b.BetID !== bet.BetID));
   };
 
   const home = bet.HomeTeam.split(" ");
