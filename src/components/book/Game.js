@@ -11,7 +11,7 @@ export default function Game({ game, cart, setCart }) {
 
   function addBetToCart(betType, spread, total, odds) {
     const newBet = {
-      BetID: 0,
+      BetID: `${game.id}${betType}`,
       UserID: 69,
       BetType: betType,
       Odds: odds,
@@ -27,8 +27,18 @@ export default function Game({ game, cart, setCart }) {
       Spread: spread,
       Total: total,
     };
-    if (!cart.includes(newBet)) setCart([...cart, newBet]);
+
+    setCart([...cart, newBet]);
   }
+
+  // function disabler(gamebet) {
+  //   const cartBet = cart.filter((b) => b.BetID === gamebet);
+
+  //   if (cartBet.length > 0) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
 
   const home = game.home_team.split(" ");
   const away = game.away_team.split(" ");
@@ -60,7 +70,7 @@ export default function Game({ game, cart, setCart }) {
           </button>
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            /* disabled={disabler(`${game.id}"ML home"`)} */
             onClick={() =>
               addBetToCart(
                 "ML home",

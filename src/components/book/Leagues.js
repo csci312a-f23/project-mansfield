@@ -6,7 +6,7 @@ export default function Leagues({ leaguesCollection, setCurrentLeague }) {
     <button
       key={league.key}
       type="button"
-      onClick={() => setCurrentLeague(league.title)}
+      onClick={() => setCurrentLeague(league)}
     >
       {league.title}
     </button>
