@@ -9,8 +9,18 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  callbacks: {
+    async session({ session, token }) {
+      // eslint-disable-next-line no-param-reassign
+      session.user.id = token.sub;
+      return session;
+    },
+  },
   pages: {
     signIn: "/login",
+  },
+  session: {
+    strategy: "jwt",
   },
 };
 
