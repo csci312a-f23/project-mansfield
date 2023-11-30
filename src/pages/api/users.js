@@ -1,39 +1,19 @@
-import {
-  getDatabase,
-  ref,
-  onValue,
-  set,
-  push,
-} from "firebase/database";
-
+import { getDatabase, ref, onValue, set } from "firebase/database";
 
 // write user data using userKey
-function writeUserData(userkey, username, email, accountBalance) {
-    const db = getDatabase();
-  
-    // Old user
-    if (userkey) {
-      const reference = ref(db, `users/${userkey}`);
-      set(reference, {
-        username,
-        email,
-        accountBalance,
-      });
-      return userkey;
-    } 
-    // if new user, we push new ref to users
-    
-      const reference = ref(db, `users/`);
-      const pushRef = push(reference);
-      set(pushRef, {
-        username,
-        email,
-        accountBalance,
-      });
-      
-    return pushRef.key;
+function writeUserData(username, email, accountBalance) {
+  const db = getDatabase();
+
+  const reference = ref(db, `users/${username}`);
+  set(reference, {
+    username,
+    email,
+    accountBalance,
+  });
+
+  return reference.key;
 }
-  
+
 export default async function handler(req, res) {
   const { method } = req;
   const database = getDatabase();
@@ -51,7 +31,6 @@ export default async function handler(req, res) {
     case "POST": {
       // use write user data, pushes and resets
       const key = writeUserData(
-        req.body.userkey,
         req.body.username,
         req.body.email,
         req.body.accountBalance,
@@ -64,9 +43,6 @@ export default async function handler(req, res) {
       res.status(405).end(`Method ${method} Not Allowed`);
   }
 }
-
-
-
 
 /* When writing new user data, there is no userkey, so we don't use userkey */
 /*
