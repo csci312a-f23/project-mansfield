@@ -6,12 +6,9 @@ import BetShape from "../shapes/BetShape";
 export default function Game({ game, cart, setCart }) {
   const gameTime = new Date(game.commence_time);
 
-  // don't forget to change this on  2 a.m. EST Sunday, March 10
-  // gameTime.setHours(gameTime.getHours() - 4);
-
   function addBetToCart(betType, spread, total, odds) {
     const newBet = {
-      BetID: 0,
+      BetID: `${game.id}${betType}`,
       UserID: 69,
       BetType: betType,
       Odds: odds,
@@ -27,7 +24,17 @@ export default function Game({ game, cart, setCart }) {
       Spread: spread,
       Total: total,
     };
-    if (!cart.includes(newBet)) setCart([...cart, newBet]);
+
+    setCart([...cart, newBet]);
+  }
+
+  function disabler(gameBet) {
+    const cartBet = cart.filter((b) => b.BetID === gameBet);
+
+    if (cartBet.length > 0) {
+      return true;
+    }
+    return false;
   }
 
   const home = game.home_team.split(" ");
@@ -42,7 +49,7 @@ export default function Game({ game, cart, setCart }) {
           {`${home[home.length - 1]}: `}
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}spread home`)}
             onClick={() =>
               addBetToCart(
                 "spread home",
@@ -60,7 +67,7 @@ export default function Game({ game, cart, setCart }) {
           </button>
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}ML home`)}
             onClick={() =>
               addBetToCart(
                 "ML home",
@@ -74,12 +81,13 @@ export default function Game({ game, cart, setCart }) {
           </button>
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}total over`)}
             onClick={() =>
               addBetToCart(
                 "total over",
                 0,
                 game?.bookmakers[0]?.markets[2]?.outcomes[0]?.point,
+                game?.bookmakers[0]?.markets[2]?.outcomes[0]?.price,
               )
             }
           >
@@ -90,7 +98,7 @@ export default function Game({ game, cart, setCart }) {
           {`${away[away.length - 1]}: `}
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}spread away`)}
             onClick={() =>
               addBetToCart(
                 "spread away",
@@ -108,7 +116,7 @@ export default function Game({ game, cart, setCart }) {
           </button>
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}ML away`)}
             onClick={() =>
               addBetToCart(
                 "ML away",
@@ -122,7 +130,7 @@ export default function Game({ game, cart, setCart }) {
           </button>
           <button
             type="button"
-            /* disabled={cart.includes(game)} */
+            disabled={disabler(`${game.id}total under`)}
             onClick={() =>
               addBetToCart(
                 "total under",
