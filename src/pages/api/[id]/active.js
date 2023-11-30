@@ -12,7 +12,7 @@ import {
 export default async function handler(req, res) {
   const { method, query } = req;
   const db = getDatabase();
-  const activeRef = ref(db, `active/${query.username}`);
+  const activeRef = ref(db, `active/${query.id}`);
 
   switch (method) {
     case "GET": {
