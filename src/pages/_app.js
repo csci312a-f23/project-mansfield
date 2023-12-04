@@ -9,13 +9,10 @@ import { firebaseConfig } from "../firebase-config";
 
 export default function App({ Component, pageProps }) {
   initializeApp(firebaseConfig);
-  const [currentPending, setCurrentPending] = useState([]);
   const [balance, setBalance] = useState();
 
   const props = {
     ...pageProps,
-    currentPending,
-    setCurrentPending,
   };
 
   /**

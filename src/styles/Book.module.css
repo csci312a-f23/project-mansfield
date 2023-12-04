@@ -11,6 +11,10 @@
   background-color: grey;
 }
 
+.main h5 {
+  text-align: center;
+}
+
 .selector {
   flex: 2;
   background-color: var(--tertiary-rgb);
