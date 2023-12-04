@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="icon" href="/mountains-svgrepo-com.svg" />
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <body>
         <Main />

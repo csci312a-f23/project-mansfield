@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { useSession } from "next-auth/react";
 import BetShape from "../../components/shapes/BetShape";
-import Navbar from "../../components/Navbar";
 import Pending from "../../components/active/Pending";
 
 export default function OpenBets({ currentPending }) {
@@ -9,12 +8,9 @@ export default function OpenBets({ currentPending }) {
     required: true,
   });
 
-  const balance = 1000;
-
   return (
     session && (
       <div>
-        <Navbar balance={balance} user={session.user.name} />
         <h2>Pending Bets</h2>
         <Pending currentPending={currentPending} />
       </div>
