@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background-color: black;
+}
+
+.main h4 {
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+
+.main h5 {
+  text-align: center;
+}
+
+.blank {
+  flex: 2;
+  background-color: var(--tertiary-rgb);
+}
+
+.pending {
+  flex: 8;
+  background-color: var(--background-rgb);
+  overflow-y: scroll;
+}
+
+.betList {
+  overflow: auto;
+  max-height: 100%;
+}
+
+.betList ul {
+  list-style: none;
+}
+
+.betList li {
+  padding: 3px;
+}
+
+.bet {
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 9vh;
+  padding: 5px;
+  text-align: center;
+}
+
+.bet2 {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 5.5vh;
+  padding: 5px;
+  text-align: center;
+}
+
+.bet p {
+  padding: 3px;
+}
+
+.time {
+  flex: 2;
+}
+
+.details {
+  flex: 4;
+}
+
+.risk {
+  flex: 1;
+}
+
+.toWin {
+  flex: 1;
+}

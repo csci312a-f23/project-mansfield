@@ -8,7 +8,7 @@
 import PropTypes from "prop-types";
 
 const BetShape = PropTypes.shape({
-  BetID: PropTypes.number.isRequired, // I changed this to number to pass proptyping
+  BetID: PropTypes.string.isRequired, // I changed this to number to pass proptyping
   UserID: PropTypes.number.isRequired, // I changed this to number to pass proptyping
   BetType: PropTypes.string.isRequired,
   Odds: PropTypes.number.isRequired,

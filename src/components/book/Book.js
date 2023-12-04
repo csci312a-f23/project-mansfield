@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
 import { useState } from "react";
 import Board from "./Board";
@@ -6,7 +5,7 @@ import Cart from "./Cart";
 import Leagues from "./Leagues";
 import data from "../../../data/selectedsports.json";
 
-export default function Book({ setCurrentPending }) {
+export default function Book() {
   const [cart, setCart] = useState([]);
   const [currentLeague, setCurrentLeague] = useState(null);
   const leaguesCollection = data;
@@ -31,16 +30,8 @@ export default function Book({ setCurrentPending }) {
         )}
       </div>
       <div className={styles.cart}>
-        <Cart
-          cart={cart}
-          setCart={setCart}
-          setCurrentPending={setCurrentPending}
-        />
+        <Cart cart={cart} setCart={setCart} />
       </div>
     </main>
   );
 }
-
-Book.propTypes = {
-  setCurrentPending: PropTypes.func.isRequired,
-};
