@@ -84,7 +84,7 @@ export default function Pending() {
       const response = await fetch(`/api/${session.user.id}/active/`);
       if (response.ok) {
         const pendingBets = await response.json();
-        setCurrentPendingBets(Object.values(pendingBets));
+        if (pendingBets) setCurrentPendingBets(Object.values(pendingBets));
       }
     })();
   }, [session.user.id]);
