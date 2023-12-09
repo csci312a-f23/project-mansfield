@@ -6,6 +6,7 @@ import styles from "@/styles/Book.module.css";
 // import games from "../../data/nfl2023reg7.json";
 import Game from "./Game";
 import BetShape from "../shapes/BetShape";
+import LeagueShape from "../shapes/LeagueShape";
 import NBA from "../../../data/nba_odds.json";
 import NFL from "../../../data/odds.json";
 import NHL from "../../../data/nhl_odds.json";
@@ -94,5 +95,5 @@ export default function Board({ cart, setCart, currentLeague }) {
 Board.propTypes = {
   cart: PropTypes.arrayOf(BetShape).isRequired,
   setCart: PropTypes.func.isRequired,
-  currentLeague: PropTypes.string.isRequired,
+  currentLeague: PropTypes.objectOf(LeagueShape).isRequired,
 };

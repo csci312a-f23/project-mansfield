@@ -1,27 +1,25 @@
-import PropTypes from "prop-types";
 import { useSession } from "next-auth/react";
-import BetShape from "../../components/shapes/BetShape";
-import Navbar from "../../components/Navbar";
+import stylesHome from "@/styles/Home.module.css";
 import Pending from "../../components/active/Pending";
+import styles from "../../styles/Pending.module.css";
 
-export default function OpenBets({ currentPending }) {
+export default function OpenBets() {
   const { data: session } = useSession({
     required: true,
   });
 
-  const balance = 1000;
-
   return (
     session && (
-      <div>
-        <Navbar balance={balance} user={session.user.name} />
-        <h2>Pending Bets</h2>
-        <Pending currentPending={currentPending} />
+      <div className={stylesHome.home}>
+        <h4> Pending Bets </h4>
+        <main className={styles.main}>
+          <div className={styles.blank} />
+          <div className={styles.pending}>
+            <Pending />
+          </div>
+          <div className={styles.blank} />
+        </main>
       </div>
     )
   );
 }
-
-OpenBets.propTypes = {
-  currentPending: PropTypes.arrayOf(BetShape).isRequired,
-};

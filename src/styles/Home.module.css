@@ -2,6 +2,12 @@
   height: 100vh;
 }
 
+.home h4 {
+  text-align: center;
+  color: white;
+  background-color: grey;
+}
+
 /* garbage below  */
 .main {
   display: flex;

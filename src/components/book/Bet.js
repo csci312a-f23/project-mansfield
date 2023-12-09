@@ -8,7 +8,7 @@ function Wager({ wagerAmount, winAmount, setAmounts, removeBetFromCart }) {
     <div>
       <p>
         {" "}
-        {`Wager: `}
+        {`Risk: `}
         <input
           type="number"
           min="0"
@@ -41,16 +41,16 @@ export default function Bet({ bet, cart, setCart }) {
   const setAmounts = (wager, toWin) => {
     if (wager) {
       setWagerAmount(Math.round(wager * 100) / 100);
-      setWinAmount(Math.round(wager * bet.Odds * 100) / 100);
+      setWinAmount(Math.round(wager * (bet.Odds - 1) * 100) / 100);
       // eslint-disable-next-line no-param-reassign
       bet.Amount = Math.round(wager * 100) / 100;
       // eslint-disable-next-line no-param-reassign
-      bet.WinAmount = Math.round(wager * bet.Odds * 100) / 100;
+      bet.WinAmount = Math.round(wager * (bet.Odds - 1) * 100) / 100;
     } else {
-      setWagerAmount(Math.round((toWin / bet.Odds) * 100) / 100);
+      setWagerAmount(Math.round((toWin / (bet.Odds - 1)) * 100) / 100);
       setWinAmount(Math.round(toWin * 100) / 100);
       // eslint-disable-next-line no-param-reassign
-      bet.Amount = Math.round((toWin / bet.Odds) * 100) / 100;
+      bet.Amount = Math.round((toWin / (bet.Odds - 1)) * 100) / 100;
       // eslint-disable-next-line no-param-reassign
       bet.WinAmount = Math.round(toWin * 100) / 100;
     }
