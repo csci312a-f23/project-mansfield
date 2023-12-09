@@ -30,9 +30,11 @@ export default function PastBets({ pastBets }) {
     </li>
   ));
 
+
+  
   return (
     <div>
-     <select value={timeFrame} onChange={e => setTimeFrame(e.target.value)}>
+     <select value={timeFrame} onChange={(e) => setTimeFrame(e.target.value)}>
       <option value="all">All Time</option>
       <option value="today">Today</option>
       <option value="last7days">Last 7 Days</option>

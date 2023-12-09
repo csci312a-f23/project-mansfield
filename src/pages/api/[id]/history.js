@@ -6,6 +6,8 @@ import {
   onValue,
   set,
   push,
+  get,
+  child,
 } from "firebase/database";
 
 
@@ -19,11 +21,23 @@ export default async function handler(req, res) {
   
   switch (method) {
     case "GET": {
-      onValue(historyRef, (snapshot) => {
-        const data = snapshot.val();
-        res.status(200).json(data);
-      });
-
+      // onValue(historyRef, (snapshot) => {
+      //   const data = snapshot.val();
+      //   res.status(200).json(data);
+      // });
+      // https://firebase.google.com/docs/database/web/read-and-write#web-modular-api_3
+      try {
+        const snapshot = await get(ref(getDatabase()), `history/${query.id}`);
+        if (snapshot.exists()) {
+          console.log(snapshot.val());
+          //console.log(snapshot.val().history.Abe) // Object of bet objects, convert to an array, and send that back to the client
+          res.status(200).json(Object.values(snapshot.val().history.Abe));
+        }
+      } catch (error) {
+        console.log(error);
+        res.status(500);
+      }
+      
       break;
 
     }

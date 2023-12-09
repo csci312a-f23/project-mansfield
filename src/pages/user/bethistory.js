@@ -1,34 +1,46 @@
 import { useSession } from "next-auth/react";
 import PastBets from "@/components/past/PastBets";
 import Navbar from "../../components/Navbar";
+import { useState, useEffect } from "react";
 
 export default function BetHistory() {
+  const [pastBets, setPastBets] = useState([]);
   const { data: session } = useSession({
     required: true,
   });
 
-  const balance = 1000;
-  const pastBets = [
-    {
-      "BetID": 0,
-      "UserID": 69,
-      "BetType": "spread away",
-      "Odds": 1.9,
-      "Amount": 10,
-      "WinAmount": 19,
-      "Payout": 0,
-      "GameID": "44ff6ef4222500377ee9500872935f93",
-      "AwayTeam": "Ball State Cardinals",
-      "HomeTeam": "Northern Illinois Huskies",
-      "CommenceTime": "2023-11-08T00:00:00Z",
-      "AwayScore": 0,
-      "HomeScore": 0,
-      "Active": true,
-      "Spread": 7,
-      "Total": 0
-  }
-  ];
 
+  
+
+  const userId = session?.user?.id;
+  console.log(session);
+
+  const balance = 1000;
+
+  // const pastBets = ({pastBets}) => { 
+
+  // }
+
+
+  
+  
+  useEffect(() => {
+    const fetchBetHistory = async () => { 
+      try { 
+        const response = await fetch(`/api/${userId}/history`);
+        const data = await response.json();
+        console.log(data);
+        setPastBets(data);
+      } catch (error) { 
+        console.error("Cannot fetch bet history:", error);
+      }
+    };
+
+    if (userId) {
+      fetchBetHistory();
+    }
+  }, [userId]);
+  
   return (
     session && (
       <div>
