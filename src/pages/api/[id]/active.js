@@ -1,4 +1,11 @@
-import { getDatabase, ref, onValue, update, remove } from "firebase/database";
+import {
+  getDatabase,
+  ref,
+  onValue,
+  push,
+  update,
+  remove,
+} from "firebase/database";
 
 // GET, POST, and DELETE the active bets
 
@@ -19,10 +26,11 @@ export default async function handler(req, res) {
       const betsToPost = req.body;
       const updates = {};
 
-      // TODO: check the-odds-api to make sure no games have started
+      // TODO: check most recent game data to make sure no games have started
       // const leagueKeys = [...new Set(Object.values(betsToPost).map(item => item.LeagueKey))]
       Object.values(betsToPost).forEach((bet) => {
-        updates[`/${bet.BetID}`] = bet;
+        const betKey = push(activeRef).key;
+        updates[`/${betKey}`] = bet;
       });
 
       update(activeRef, updates);
