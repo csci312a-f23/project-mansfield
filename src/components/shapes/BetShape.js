@@ -22,6 +22,7 @@ const BetShape = PropTypes.shape({
   Active: PropTypes.bool.isRequired,
   Total: PropTypes.number.isRequired,
   Spread: PropTypes.number.isRequired,
+  LeagueKey: PropTypes.string.isRequired,
 });
 
 export default BetShape;

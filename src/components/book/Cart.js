@@ -15,19 +15,18 @@ export default function Cart({ cart, setCart }) {
 
   const setCartPend = () => {
     const betsToPost = cart.filter((b) => b.Amount > 0);
-
-    betsToPost.forEach((bet) => {
-      fetch(`/api/${session.user.id}/active`, {
-        method: "POST",
-        body: JSON.stringify({
-          ...bet,
-        }),
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      });
+    // betsToPost.forEach((bet) => {
+    fetch(`/api/${session.user.id}/active`, {
+      method: "POST",
+      body: JSON.stringify({
+        ...betsToPost,
+      }),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
     });
+    // });
 
     setCart(cart.filter((b) => b.Amount === 0));
   };

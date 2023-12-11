@@ -23,6 +23,7 @@ export default function Game({ game, cart, setCart }) {
       Active: true,
       Spread: spread,
       Total: total,
+      LeagueKey: game.sport_key,
     };
 
     setCart([...cart, newBet]);
