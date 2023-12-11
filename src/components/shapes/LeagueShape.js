@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 
 const LeagueShape = PropTypes.shape({
-  LeagueKey: PropTypes.string.isRequired,
-  LeagueGroup: PropTypes.string.isRequired,
-  LeagueTitle: PropTypes.string.isRequired,
-  LeagueDesc: PropTypes.string.isRequired,
-  Active: PropTypes.bool.isRequired,
-  HasOutrights: PropTypes.bool.isRequired,
+  key: PropTypes.string.isRequired,
+  group: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  has_outrights: PropTypes.bool.isRequired,
 });
 
 export default LeagueShape;

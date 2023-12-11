@@ -15,74 +15,58 @@ import NCAAF from "../../../data/ncaaf_odds.json";
 export default function Board({ cart, setCart, currentLeague }) {
   // this is the implementation for the Odds api, it is working I just disabled it to make sure
   // that we don't reach the limit of our api
-  // const [games, setGames] = useState([]);
+  /*
+  const [games, setGames] = useState([]);
+  
+  useEffect(() => {
+    (async () => {
+      const response = await fetch(`api/games/${currentLeague.key}`);
+      if (response.ok) {
+        const gameOdds = await response.json();
+        setGames(gameOdds);
+      }
+    })();
+  }, [currentLeague]);
 
-  // useEffect(() => {
-  //   (async () => {
-  //     const response = await fetch(
-  //       `https://api.the-odds-api.com//v4/sports/${currentLeague.key}/odds/?apiKey={apikey}&regions=us&markets=h2h,spreads,totals&bookmakers=fanduel`,
-  //     );
-  //     if (response.ok) {
-  //       const gameOdds = await response.json();
-  //       setGames(gameOdds);
-  //     }
-  //   })();
-  // }, [currentLeague]);
-
-  // const gamesArr = [...games].map((g) => (
-  //   <li key={g.id}>
-  //     <Game game={g} cart={cart} setCart={setCart} />
-  //   </li>
-  // ));
-
-  if (currentLeague.title === "NBA") {
-    const gamesArr = [...NBA].map((g) => (
-      <li key={g.id}>
-        <Game game={g} cart={cart} setCart={setCart} />
-      </li>
-    ));
-
-    return (
-      <div className={styles.gameList}>
-        <h4>Upcoming Games</h4>
-        <ul>{gamesArr}</ul>
-      </div>
-    );
-  }
-  if (currentLeague.title === "NFL") {
-    const gamesArr = [...NFL].map((g) => (
-      <li key={g.id}>
-        <Game game={g} cart={cart} setCart={setCart} />
-      </li>
-    ));
-
-    return (
-      <div className={styles.gameList}>
-        <h4>Upcoming Games</h4>
-        <ul>{gamesArr}</ul>
-      </div>
-    );
-  }
-  if (currentLeague.title === "NHL") {
-    const gamesArr = [...NHL].map((g) => (
-      <li key={g.id}>
-        <Game game={g} cart={cart} setCart={setCart} />
-      </li>
-    ));
-
-    return (
-      <div className={styles.gameList}>
-        <h4>Upcoming Games</h4>
-        <ul>{gamesArr}</ul>
-      </div>
-    );
-  }
-
-  const gamesArr = [...NCAAF].map((g) => (
+  const gamesArr = [...games].map((g) => (
     <li key={g.id}>
       <Game game={g} cart={cart} setCart={setCart} />
     </li>
   ));
+  */
+
+  let gamesArr;
+  if (currentLeague.title === "NBA") {
+    gamesArr = [...NBA].map((g) => (
+      <li key={g.id}>
+        <Game game={g} cart={cart} setCart={setCart} />
+      </li>
+    ));
+  } else if (currentLeague.title === "NFL") {
+    gamesArr = [...NFL].map((g) => (
+      <li key={g.id}>
+        <Game game={g} cart={cart} setCart={setCart} />
+      </li>
+    ));
+  } else if (currentLeague.title === "NHL") {
+    gamesArr = [...NHL].map((g) => (
+      <li key={g.id}>
+        <Game game={g} cart={cart} setCart={setCart} />
+      </li>
+    ));
+  } else if (currentLeague.title === "NCAAB") {
+    gamesArr = [...NCAAF].map((g) => (
+      <li key={g.id}>
+        <Game game={g} cart={cart} setCart={setCart} />
+      </li>
+    ));
+  } else if (currentLeague.title === "NCAAF") {
+    gamesArr = [...NCAAF].map((g) => (
+      <li key={g.id}>
+        <Game game={g} cart={cart} setCart={setCart} />
+      </li>
+    ));
+  }
 
   return (
     <div className={styles.gameList}>
@@ -92,8 +76,12 @@ export default function Board({ cart, setCart, currentLeague }) {
   );
 }
 
+Board.defaultProps = {
+  currentLeague: undefined,
+};
+
 Board.propTypes = {
   cart: PropTypes.arrayOf(BetShape).isRequired,
   setCart: PropTypes.func.isRequired,
-  currentLeague: PropTypes.objectOf(LeagueShape).isRequired,
+  currentLeague: PropTypes.objectOf(LeagueShape),
 };

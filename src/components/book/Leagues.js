@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "@/styles/Book.module.css";
+import LeagueShape from "../shapes/LeagueShape";
 
 export default function Leagues({ leaguesCollection, setCurrentLeague }) {
   const leaguesList = [...leaguesCollection].map((league) => (
@@ -21,15 +22,6 @@ export default function Leagues({ leaguesCollection, setCurrentLeague }) {
 }
 
 Leagues.propTypes = {
-  leaguesCollection: PropTypes.arrayOf(
-    PropTypes.shape({
-      active: PropTypes.bool.isRequired,
-      description: PropTypes.string.isRequired,
-      group: PropTypes.string.isRequired,
-      has_outrights: PropTypes.bool.isRequired,
-      key: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  leaguesCollection: PropTypes.arrayOf(LeagueShape).isRequired,
   setCurrentLeague: PropTypes.func.isRequired,
 };
