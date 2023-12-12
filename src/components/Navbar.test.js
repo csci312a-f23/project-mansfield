@@ -2,6 +2,9 @@ import { useSession } from "next-auth/react";
 import { render, screen } from "@testing-library/react";
 import Navbar from "./Navbar";
 
+jest.mock("next-auth/react");
+jest.mock("next/router", () => require("next-router-mock")); // eslint-disable-line global-require
+
 describe("ButtonBar: ButtonBar tests", () => {
   const balance = 100;
   const balanceNeg = -100;
