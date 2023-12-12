@@ -17,7 +17,7 @@ export default function Game({ game, cart, setCart }) {
       GameID: game.id,
       AwayTeam: game.away_team,
       HomeTeam: game.home_team,
-      CommenceTime: game.commence_time,
+      CommenceTime: gameTime,
       AwayScore: 0,
       HomeScore: 0,
       Active: true,
