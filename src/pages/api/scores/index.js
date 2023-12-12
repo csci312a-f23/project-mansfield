@@ -2,7 +2,7 @@ import { getDatabase, onValue, update, get, ref } from "firebase/database";
 
 async function fetchLeague(league) {
   const response = await fetch(
-    `https://api.the-odds-api.com//v4/sports/${league}/odds/?apiKey=${process.env.REACT_APP_ODDS_API_KEY}&regions=us&markets=h2h,spreads,totals&bookmakers=fanduel`,
+    `https://api.the-odds-api.com//v4/sports/${league}/odds/?apiKey=${process.env.REACT_APP_ODDS_API_KEY}&regions=us&markets=h2h,spreads,totals&bookmakers=fanduel&dateFormat=unix`,
   );
   const games = await response.json();
   return games;
@@ -44,10 +44,10 @@ export default async function handler(req, res) {
 
       const leagues = [
         "americanfootball_nfl",
-        // "americanfootball_ncaaf",
-        // "basketball_nba",
-        // "basketball_ncaab",
-        // "icehockey_nhl"
+        "americanfootball_ncaaf",
+        "basketball_nba",
+        "basketball_ncaab",
+        "icehockey_nhl",
       ];
 
       const allGames = await Promise.all(
