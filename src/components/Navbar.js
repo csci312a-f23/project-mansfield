@@ -52,7 +52,9 @@ export default function Navbar({ balance, setBalance }) {
   return (
     session && (
       <div className={styles.navbar}>
-        <a onClick={() => handleNavClick("home")}>Mansfield</a>
+        <a onClick={() => handleNavClick("home")} data-testid="mansfield">
+          Mansfield
+        </a>
         <div className={styles.dropdown}>
           <button
             type="button"

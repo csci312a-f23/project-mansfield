@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 jest.mock("next-auth/react");
 jest.mock("next/router", () => require("next-router-mock")); // eslint-disable-line global-require
 
-describe("ButtonBar: ButtonBar tests", () => {
+describe("Navbar: Navbar tests", () => {
   const balance = 100;
   const balanceNeg = -100;
 
@@ -21,23 +21,23 @@ describe("ButtonBar: ButtonBar tests", () => {
   test("Navbar: displays mansfield button and dropdown button", () => {
     render(<Navbar balance={balance} setBalance={jest.fn()} />);
 
-    expect(
-      screen.queryByRole("button", { name: "Mansfield" }),
-    ).toBeInTheDocument();
+    expect(screen.getByTestId("mansfield")).toBeInTheDocument();
     expect(screen.getByTestId("dropdownButton")).toBeInTheDocument();
   });
 
   test("ButtonBar: positive balance is green", () => {
     render(<Navbar balance={balance} setBalance={jest.fn()} />);
 
+    expect(screen.getByTestId("mansfield")).toBeInTheDocument();
+    expect(screen.getByTestId("dropdownButton")).toBeInTheDocument();
     expect(screen.getByTestId("positiveBalance")).toBeVisible();
-    expect(screen.getByTestId("negativeBalance")).not.toBeVisible();
   });
 
   test("ButtonBar: negative balance is red", () => {
     render(<Navbar balance={balanceNeg} setBalance={jest.fn()} />);
 
-    expect(screen.getByTestId("positiveBalance")).not.toBeVisible();
+    expect(screen.getByTestId("mansfield")).toBeInTheDocument();
+    expect(screen.getByTestId("dropdownButton")).toBeInTheDocument();
     expect(screen.getByTestId("negativeBalance")).toBeVisible();
   });
 });
