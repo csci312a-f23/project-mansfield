@@ -16,7 +16,7 @@ describe("Leagues tests", () => {
   test("Clicking on a league selects the league", async () => {
     const handler = jest.fn();
     render(
-      <Leagues leaguesCollection={[...leagues]} setCurrentLeague={jest.fn()} />,
+      <Leagues leaguesCollection={[...leagues]} setCurrentLeague={handler} />,
     );
 
     const elements = await Promise.all(
