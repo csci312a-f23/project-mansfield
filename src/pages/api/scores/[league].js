@@ -14,7 +14,8 @@ router.get(async (req, res) => {
       const allGames = snapshot.val();
       const futureGames = {};
       Object.entries(allGames).forEach(([id, game]) => {
-        if (game.commence_time > currentTimestamp) futureGames[id] = game;
+        if (game.bookmakers && game.commence_time > currentTimestamp)
+          futureGames[id] = game;
       });
       res.status(200).json(futureGames);
     } else {
