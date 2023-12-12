@@ -8,7 +8,7 @@ import Game from "./Game";
 import BetShape from "../shapes/BetShape";
 import LeagueShape from "../shapes/LeagueShape";
 import NBA from "../../../data/nba_odds.json";
-import NFL from "../../../data/odds.json";
+import NFL from "../../../data/nfl2023reg14.json";
 import NHL from "../../../data/nhl_odds.json";
 import NCAAF from "../../../data/ncaaf_odds.json";
 
