@@ -3,11 +3,14 @@ import {
   ref,
   onValue,
   set,
+  get,
   push,
   remove,
 } from "firebase/database";
 
-// GET, POST, and DELETE the active bets
+import resolveBet from "../../../db/resolveBet";
+
+// GET, POST, PUT and DELETE the active bets
 
 export default async function handler(req, res) {
   const { method, query } = req;
@@ -15,6 +18,7 @@ export default async function handler(req, res) {
   const activeRef = ref(db, `active/${query.id}`);
 
   switch (method) {
+    // returns active bets
     case "GET": {
       onValue(activeRef, (snapshot) => {
         const data = snapshot.val();
@@ -31,19 +35,48 @@ export default async function handler(req, res) {
       res.status(200).json({ complete: true });
       break;
     }
+    // deletes an active bet
     case "DELETE": {
       if (!query.betID) {
         res.status(404).json({ "no betID provided": true });
       } else {
-        remove(ref(db, `active/${query.id}/${query.betID}`));
-
-        res.status(200).json({ "successful DELETE": query.betID });
+        onValue(ref(db, `active/${query.id}`), (snapshot) => {
+          const bets = snapshot.val();
+          const urlID = bets.find((bet) => bet.BetID === query.betID);
+          remove(ref(db, `active/${query.id}/${urlID}`));
+          res.status(200).json({ "successful DELETE": query.betID });
+        });
       }
       break;
     }
 
+    // updating bets when game is completed
+    case "PUT": {
+      const nflRef = ref(db, `games/nfl`);
+
+      // Get Active Bets
+      const snapshot1 = await get(activeRef);
+      const data = snapshot1.val();
+
+      // get nfl game data
+      const snapshot2 = await get(nflRef);
+      const games = snapshot2.val();
+
+      const keys = Object.keys(data);
+      const values = Object.values(data);
+
+      // loop through games in firebase db and check if game's ID matches the bet's gameID
+      for (let i = 0; i < keys.length; i += 1) {
+        const tempGame = games.find((game) => game.id === values[i].GameID);
+        resolveBet(values[i], query, tempGame, keys[i], db);
+      }
+
+      res.status(200).json({ succes: true });
+      break;
+    }
+
     default:
-      res.setHeader("Allow", ["GET", "POST", "DELETE"]);
+      res.setHeader("Allow", ["GET", "POST", "DELETE", "PUT"]);
       res.status(405).end(`Method ${method} Not Allowed`);
   }
 }
