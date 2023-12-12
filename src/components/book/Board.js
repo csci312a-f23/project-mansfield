@@ -31,7 +31,12 @@ export default function Board({ cart, setCart, currentLeague }) {
     })();
   }, [currentLeague]);
 
-  const gamesArr = [...games].map((g) => (
+  const sortedGames = [...games];
+  sortedGames.sort(
+    (a, b) => new Date(a.commence_time) - new Date(b.commence_time),
+  );
+
+  const gamesArr = [...sortedGames].map((g) => (
     <li key={g.id}>
       <Game game={g} cart={cart} setCart={setCart} />
     </li>
