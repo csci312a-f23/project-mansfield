@@ -8,26 +8,28 @@ export default function BetHistory() {
   const { data: session } = useSession({
     required: true,
   });
-
-
   
-
-  const userId = session?.user?.id;
-  console.log(session);
-
   const balance = 1000;
 
-  // const pastBets = ({pastBets}) => { 
-
-  // }
-
-
-  
-  
+  useEffect(() => {
+    console.log("Session: ,", session);
+    if (session && session.user) {
+      (async () => {
+      const response = await fetch(`/api/${session.user.id}/history`);
+      if (response.ok) { 
+        const data = await response.json();
+        console.log("API Data: ", data);
+        setPastBets(Object.values(pastBets));
+      }
+      })();
+    }
+  }, [session]);
+    
+  /*
   useEffect(() => {
     const fetchBetHistory = async () => { 
       try { 
-        const response = await fetch(`/api/${userId}/history`);
+        const response = await fetch(`/api/${session.user.id}/history`);
         const data = await response.json();
         console.log(data);
         setPastBets(data);
@@ -35,16 +37,13 @@ export default function BetHistory() {
         console.error("Cannot fetch bet history:", error);
       }
     };
+  });
+  */
 
-    if (userId) {
-      fetchBetHistory();
-    }
-  }, [userId]);
-  
   return (
     session && (
       <div>
-        <Navbar balance={balance} user={session.user.name} />
+        <Navbar balance={session.user.balance} user={session.user.name} />
         <PastBets pastBets={pastBets} />
       </div>
     )
