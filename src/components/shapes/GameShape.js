@@ -8,7 +8,7 @@
 import PropTypes from "prop-types";
 
 const GameShape = PropTypes.shape({
-  commence_time: PropTypes.string.isRequired,
+  commence_time: PropTypes.number.isRequired,
   home_team: PropTypes.string.isRequired,
   away_team: PropTypes.string.isRequired,
 });

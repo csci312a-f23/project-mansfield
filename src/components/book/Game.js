@@ -4,7 +4,7 @@ import GameShape from "../shapes/GameShape";
 import BetShape from "../shapes/BetShape";
 
 export default function Game({ game, cart, setCart }) {
-  const gameTime = new Date(game.commence_time);
+  const gameTime = new Date(game.commence_time * 1000);
 
   function addBetToCart(betType, spread, total, odds) {
     const newBet = {
@@ -17,7 +17,7 @@ export default function Game({ game, cart, setCart }) {
       GameID: game.id,
       AwayTeam: game.away_team,
       HomeTeam: game.home_team,
-      CommenceTime: game.commence_time,
+      CommenceTime: gameTime,
       AwayScore: 0,
       HomeScore: 0,
       Active: true,

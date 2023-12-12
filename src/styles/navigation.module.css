@@ -79,3 +79,11 @@ style container */
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
 }
+
+.balanceNeg {
+  float: right;
+  color: red;
+  padding: 15px 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}

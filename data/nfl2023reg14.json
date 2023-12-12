@@ -1,0 +1,573 @@
+[
+  {
+    "id": "48d726d4f5811eab626ddfb09bf48235",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T18:02:34Z",
+    "home_team": "Cleveland Browns",
+    "away_team": "Jacksonville Jaguars",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Browns",
+                "price": 1.13
+              },
+              {
+                "name": "Jacksonville Jaguars",
+                "price": 5.6
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Browns",
+                "price": 1.47,
+                "point": -6.5
+              },
+              {
+                "name": "Jacksonville Jaguars",
+                "price": 2.62,
+                "point": 6.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.06,
+                "point": 52.5
+              },
+              {
+                "name": "Under",
+                "price": 1.72,
+                "point": 52.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c4fa37180b109663749897f5e7ddb134",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T18:02:36Z",
+    "home_team": "Baltimore Ravens",
+    "away_team": "Los Angeles Rams",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:05:47Z",
+        "markets": [
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:05:47Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 2.08,
+                "point": 57.5
+              },
+              {
+                "name": "Under",
+                "price": 1.71,
+                "point": 57.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "75558e1b61a377e60eba1971dfb6a46c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T18:02:44Z",
+    "home_team": "Atlanta Falcons",
+    "away_team": "Tampa Bay Buccaneers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:02:40Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:02:40Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Falcons",
+                "price": 7.8
+              },
+              {
+                "name": "Tampa Bay Buccaneers",
+                "price": 1.07
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "003f1b5d02fe699b7efae4b3af1df39c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T18:03:00Z",
+    "home_team": "Chicago Bears",
+    "away_team": "Detroit Lions",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T20:59:36Z",
+        "markets": [
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T20:59:36Z",
+            "outcomes": [
+              {
+                "name": "Chicago Bears",
+                "price": 5.3,
+                "point": -15.5
+              },
+              {
+                "name": "Detroit Lions",
+                "price": 1.14,
+                "point": 15.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2c2e60cf464088acdefc0c972de49317",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T21:05:30Z",
+    "home_team": "Las Vegas Raiders",
+    "away_team": "Minnesota Vikings",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Las Vegas Raiders",
+                "price": 2.0
+              },
+              {
+                "name": "Minnesota Vikings",
+                "price": 1.78
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Las Vegas Raiders",
+                "price": 1.88,
+                "point": 1.5
+              },
+              {
+                "name": "Minnesota Vikings",
+                "price": 1.88,
+                "point": -1.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.88,
+                "point": 39.5
+              },
+              {
+                "name": "Under",
+                "price": 1.88,
+                "point": 39.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4fc535d395a9c86c6fa686a251a47acd",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T21:05:30Z",
+    "home_team": "San Francisco 49ers",
+    "away_team": "Seattle Seahawks",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "San Francisco 49ers",
+                "price": 1.02
+              },
+              {
+                "name": "Seattle Seahawks",
+                "price": 12.0
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "San Francisco 49ers",
+                "price": 1.83,
+                "point": -19.5
+              },
+              {
+                "name": "Seattle Seahawks",
+                "price": 1.93,
+                "point": 19.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.88,
+                "point": 49.5
+              },
+              {
+                "name": "Under",
+                "price": 1.88,
+                "point": 49.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3f3e724f37cedc82b772233204dc42eb",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T21:28:00Z",
+    "home_team": "Kansas City Chiefs",
+    "away_team": "Buffalo Bills",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.91,
+                "point": 49.0
+              },
+              {
+                "name": "Under",
+                "price": 1.91,
+                "point": 49.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1b45a999d8130829ebd2663fed2dff9e",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-10T21:28:00Z",
+    "home_team": "Los Angeles Chargers",
+    "away_team": "Denver Broncos",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Denver Broncos",
+                "price": 2.38
+              },
+              {
+                "name": "Los Angeles Chargers",
+                "price": 1.61
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Denver Broncos",
+                "price": 1.91,
+                "point": 3.0
+              },
+              {
+                "name": "Los Angeles Chargers",
+                "price": 1.91,
+                "point": -3.0
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.87,
+                "point": 44.5
+              },
+              {
+                "name": "Under",
+                "price": 1.95,
+                "point": 44.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "419340a84b66e0873b00597841a3531c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-11T01:23:00Z",
+    "home_team": "Dallas Cowboys",
+    "away_team": "Philadelphia Eagles",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Dallas Cowboys",
+                "price": 1.6
+              },
+              {
+                "name": "Philadelphia Eagles",
+                "price": 2.42
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Dallas Cowboys",
+                "price": 2.0,
+                "point": -3.5
+              },
+              {
+                "name": "Philadelphia Eagles",
+                "price": 1.82,
+                "point": 3.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.87,
+                "point": 51.5
+              },
+              {
+                "name": "Under",
+                "price": 1.95,
+                "point": 51.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ea43090cd4cc2eb2fb98ba3847aba986",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-12T01:18:00Z",
+    "home_team": "New York Giants",
+    "away_team": "Green Bay Packers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Green Bay Packers",
+                "price": 1.32
+              },
+              {
+                "name": "New York Giants",
+                "price": 3.5
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Green Bay Packers",
+                "price": 1.87,
+                "point": -6.5
+              },
+              {
+                "name": "New York Giants",
+                "price": 1.95,
+                "point": 6.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.91,
+                "point": 37.0
+              },
+              {
+                "name": "Under",
+                "price": 1.91,
+                "point": 37.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2c4ca7353e2db06d12d583f8a46d38a7",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL",
+    "commence_time": "2023-12-12T01:18:00Z",
+    "home_team": "Miami Dolphins",
+    "away_team": "Tennessee Titans",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "last_update": "2023-12-10T21:11:59Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Miami Dolphins",
+                "price": 1.11
+              },
+              {
+                "name": "Tennessee Titans",
+                "price": 7.1
+              }
+            ]
+          },
+          {
+            "key": "spreads",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Miami Dolphins",
+                "price": 1.91,
+                "point": -13.5
+              },
+              {
+                "name": "Tennessee Titans",
+                "price": 1.91,
+                "point": 13.5
+              }
+            ]
+          },
+          {
+            "key": "totals",
+            "last_update": "2023-12-10T21:11:59Z",
+            "outcomes": [
+              {
+                "name": "Over",
+                "price": 1.91,
+                "point": 46.5
+              },
+              {
+                "name": "Under",
+                "price": 1.91,
+                "point": 46.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
