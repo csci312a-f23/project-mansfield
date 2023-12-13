@@ -10,7 +10,7 @@
 import { getServerSession } from "next-auth/next";
 import { testApiHandler } from "next-test-api-route-handler";
 import { firebaseConfig } from "@/firebase-config";
-import { initializeApp } from "firebase/app";
+import { initializeApp, deleteApp } from "firebase/app";
 import userEndpoint from "../pages/api/[id]/index";
 
 jest.mock("next-auth/next");
@@ -29,10 +29,11 @@ const mockAuthenticated = {
 // const mockUnauthenticated = {
 //   data: undefined,
 // };
+let firebase;
 
 describe("Api testing", () => {
   beforeAll(() => {
-    initializeApp(firebaseConfig);
+    firebase = initializeApp(firebaseConfig);
   });
   beforeEach(() => {
     getServerSession.mockResolvedValue(mockAuthenticated);
@@ -42,14 +43,18 @@ describe("Api testing", () => {
     getServerSession.mockReset();
   });
 
+  afterAll(() => {
+    deleteApp(firebase);
+  });
+
   test("POST /api/test should return something", async () => {
     await testApiHandler({
       rejectOnHandlerError: false, // We want to assert on the error
       handler: userEndpoint,
+      paramsPatcher: (params) => (params.id = "testId"),
       test: async ({ fetch }) => {
         const res = await fetch({
           method: "POST",
-          paramsPatcher: (params) => (params.id = "testingUser"),
           body: JSON.stringify({
             username: mockAuthenticated.data.user.name,
             email: mockAuthenticated.data.user.email,
