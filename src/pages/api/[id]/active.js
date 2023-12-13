@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     res.status(401).json({ message: "You must be logged in." });
     return;
   }
-
+  console.log(session);
   const { method, query } = req;
   if (session.user.id !== query.id) {
     res

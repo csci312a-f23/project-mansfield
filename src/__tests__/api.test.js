@@ -18,14 +18,11 @@ import activeEndpoint from "../pages/api/[id]/active";
 jest.mock("next-auth/next");
 
 const mockAuthenticated = {
-  data: {
-    user: {
-      id: "testId",
-      name: "Mocked Name",
-      email: "test@test.test",
-    },
+  user: {
+    id: "testId",
+    name: "Mocked Name",
+    email: "test@test.test",
   },
-  status: "authenticated",
 };
 
 const mockUnauthenticated = undefined;
@@ -52,13 +49,13 @@ describe("Api testing", () => {
     await testApiHandler({
       rejectOnHandlerError: false,
       handler: userEndpoint,
-      paramsPatcher: (params) => (params.id = mockAuthenticated.data.user.id),
+      paramsPatcher: (params) => (params.id = mockAuthenticated.user.id),
       test: async ({ fetch }) => {
         const res = await fetch({
           method: "POST",
           body: JSON.stringify({
-            username: mockAuthenticated.data.user.name,
-            email: mockAuthenticated.data.user.email,
+            username: mockAuthenticated.user.name,
+            email: mockAuthenticated.user.email,
           }),
           headers: {
             Accept: "application/json",
@@ -71,19 +68,27 @@ describe("Api testing", () => {
     });
   });
 
-  // test("Fetch [id]/active returns an active bet", async () => {
-  //   await testApiHandler({
-  //     rejectOnHandlerError: false,
-  //     handler: activeEndpoint,
-  //     paramsPatcher: (params) => (params.id = mockAuthenticated.data.user.id),
-  //     test: async ({ fetch }) => {
-  //       const res = await fetch();
-  //       // expect(res.ok).toBe(true);
-  //       expect(res.status).toBe(200);
-  //       await expect(res.json()).resolves.toMatchObject({"testActiveId": "test bet for test suite"});
-  //     },
-  //   });
-  // });
+  test("Fetch [id]/active returns an active bet", async () => {
+    await testApiHandler({
+      rejectOnHandlerError: false,
+      handler: activeEndpoint,
+      paramsPatcher: (params) => (params.id = mockAuthenticated.user.id),
+      test: async ({ fetch }) => {
+        const res = await fetch({
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        });
+        expect(res.ok).toBe(true);
+        expect(res.status).toBe(200);
+        await expect(res.json()).resolves.toMatchObject({
+          testActiveId: "test bet for test suite",
+        });
+      },
+    });
+  });
 
   describe("Unauthenticated calls are rejected", () => {
     beforeEach(() => {

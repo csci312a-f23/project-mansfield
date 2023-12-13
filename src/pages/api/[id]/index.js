@@ -11,7 +11,7 @@ router
       if (snapshot.exists()) {
         res.status(200).json(snapshot.val());
       } else {
-        res.status(404).json({ Message: "User does not exist" });
+        res.status(404).json({ message: "User does not exist" });
       }
     });
   })
