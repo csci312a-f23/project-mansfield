@@ -67,7 +67,7 @@ export default async function handler(req, res) {
 
     // updating bets when game is completed
     case "PUT": {
-      const nflRef = ref(db, `games/nfl`);
+      const nflRef = ref(db, `scores/nfl`);
 
       // Get Active Bets
       const snapshot1 = await get(activeRef);

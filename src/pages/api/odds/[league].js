@@ -1,12 +1,11 @@
 import { createRouter } from "next-connect";
 import { getDatabase, get, ref } from "firebase/database";
-import { authenticated } from "../../../lib/middleware";
 
 const router = createRouter();
 const db = getDatabase();
 
-router.get(authenticated, async (req, res) => {
-  const reference = ref(db, `scores/${req.query.league}`);
+router.get(async (req, res) => {
+  const reference = ref(db, `games/${req.query.league}`);
 
   await get(reference).then((snapshot) => {
     const currentTimestamp = Date.now() / 1000;
