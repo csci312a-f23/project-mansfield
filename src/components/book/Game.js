@@ -23,6 +23,7 @@ export default function Game({ game, cart, setCart }) {
       Active: true,
       Spread: spread,
       Total: total,
+      Result: 0,
     };
 
     setCart([...cart, newBet]);
