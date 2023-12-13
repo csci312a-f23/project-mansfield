@@ -41,7 +41,6 @@ export default function Navbar({ balance, setBalance }) {
     if (string === "openbets") {
       router.push("/user/openbets");
     } else if (string === "logout") {
-      // router.push("/login");
       logOut();
     } else if (string === "bethistory") {
       router.push("/user/bethistory");
@@ -53,9 +52,15 @@ export default function Navbar({ balance, setBalance }) {
   return (
     session && (
       <div className={styles.navbar}>
-        <a onClick={() => handleNavClick("home")}>Mansfield</a>
+        <a onClick={() => handleNavClick("home")} data-testid="mansfield">
+          Mansfield
+        </a>
         <div className={styles.dropdown}>
-          <button type="button" className={styles.dropdownButton}>
+          <button
+            type="button"
+            className={styles.dropdownButton}
+            data-testid="dropdownButton"
+          >
             {session.user.name} ▼
           </button>
           <div className={styles.dropdownContent}>
@@ -65,9 +70,13 @@ export default function Navbar({ balance, setBalance }) {
           </div>
         </div>
         {balance > 0 ? (
-          <div className={styles.balance}>${balance}</div>
+          <div className={styles.balance} data-testid="positiveBalance">
+            ${balance}
+          </div>
         ) : (
-          <div className={styles.balanceNeg}>${balance}</div>
+          <div className={styles.balanceNeg} data-testid="negativeBalance">
+            ${balance}
+          </div>
         )}
       </div>
     )
