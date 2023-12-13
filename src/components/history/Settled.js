@@ -44,7 +44,7 @@ function Bet({ bet, number }) {
           <div className={styles.date}>
             <h4>Date</h4>
             <p>
-              {`${new Date(bet.CommenceTime).toLocaleString().slice(0, 10)}`}{" "}
+              {`${new Date(bet.CommenceTime).toLocaleString().slice(0, 9)}`}{" "}
             </p>
           </div>
           <div className={styles.details}>
@@ -74,7 +74,7 @@ function Bet({ bet, number }) {
               {" "}
               {`${new Date(bet.CommenceTime)
                 .toLocaleString()
-                .slice(0, 10)}`}{" "}
+                .slice(0, 9)}`}{" "}
             </p>
           </div>
           <div className={styles.details}>
