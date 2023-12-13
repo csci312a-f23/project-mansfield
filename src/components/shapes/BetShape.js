@@ -8,8 +8,8 @@
 import PropTypes from "prop-types";
 
 const BetShape = PropTypes.shape({
-  BetID: PropTypes.string.isRequired, // I changed this to number to pass proptyping
-  UserID: PropTypes.number.isRequired, // I changed this to number to pass proptyping
+  BetID: PropTypes.string.isRequired,
+  UserID: PropTypes.number.isRequired,
   BetType: PropTypes.string.isRequired,
   Odds: PropTypes.number.isRequired,
   Amount: PropTypes.number.isRequired,
@@ -22,6 +22,7 @@ const BetShape = PropTypes.shape({
   Active: PropTypes.bool.isRequired,
   Total: PropTypes.number.isRequired,
   Spread: PropTypes.number.isRequired,
+  Result: PropTypes.number.isRequired,
 });
 
 export default BetShape;

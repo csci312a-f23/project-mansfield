@@ -20,7 +20,7 @@
   background-color: var(--tertiary-rgb);
 }
 
-.pending {
+.history {
   flex: 9;
   background-color: var(--background-rgb);
   overflow-y: scroll;
@@ -62,18 +62,24 @@
   padding: 3px;
 }
 
-.time {
-  flex: 3;
+.date {
+  flex: 1;
 }
 
 .details {
   flex: 4;
 }
 
-.risk {
-  flex: 1;
+.score {
+  flex: 3;
 }
 
-.toWin {
+.result {
   flex: 1;
+  color: green;
+}
+
+.resultNeg {
+  flex: 1;
+  color: red;
 }
