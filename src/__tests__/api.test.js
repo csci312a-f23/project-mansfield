@@ -12,13 +12,15 @@ import { testApiHandler } from "next-test-api-route-handler";
 import { firebaseConfig } from "@/firebase-config";
 import { initializeApp, deleteApp } from "firebase/app";
 import userEndpoint from "../pages/api/[id]/index";
+// import historyEndpoint from "../pages/api/[id]/history";
+import activeEndpoint from "../pages/api/[id]/active";
 
 jest.mock("next-auth/next");
 
 const mockAuthenticated = {
   data: {
     user: {
-      id: "test",
+      id: "testId",
       name: "Mocked Name",
       email: "test@test.test",
     },
@@ -26,9 +28,8 @@ const mockAuthenticated = {
   status: "authenticated",
 };
 
-// const mockUnauthenticated = {
-//   data: undefined,
-// };
+const mockUnauthenticated = undefined;
+
 let firebase;
 
 describe("Api testing", () => {
@@ -49,9 +50,9 @@ describe("Api testing", () => {
 
   test("POST /api/test should return something", async () => {
     await testApiHandler({
-      rejectOnHandlerError: false, // We want to assert on the error
+      rejectOnHandlerError: false,
       handler: userEndpoint,
-      paramsPatcher: (params) => (params.id = "testId"),
+      paramsPatcher: (params) => (params.id = mockAuthenticated.data.user.id),
       test: async ({ fetch }) => {
         const res = await fetch({
           method: "POST",
@@ -70,27 +71,36 @@ describe("Api testing", () => {
     });
   });
 
-  // describe("Unauthenticated calls are rejected", () => {
-  //   beforeEach(() => {
-  //     getServerSession.mockResolvedValue(mockUnauthenticated);
-  //   });
-
-  //   test("Unauthenticated [id]/active", async () => {
-  //     await testApiHandler({
-  //       rejectOnHandlerError: false, // We want to assert on the error
-  //       handler: activeEndpoint,
-  //       test: async ({ fetch }) => {
-  //         const res = await fetch({
-  //           method: "GET",
-  //           headers: {
-  //             "content-type": "application/json",
-  //           },
-  //           body: JSON.stringify(),
-  //         });
-  //         expect(res.ok).toBe(false);
-  //         expect(res.status).toBe(403);
-  //       },
-  //     });
+  // test("Fetch [id]/active returns an active bet", async () => {
+  //   await testApiHandler({
+  //     rejectOnHandlerError: false,
+  //     handler: activeEndpoint,
+  //     paramsPatcher: (params) => (params.id = mockAuthenticated.data.user.id),
+  //     test: async ({ fetch }) => {
+  //       const res = await fetch();
+  //       // expect(res.ok).toBe(true);
+  //       expect(res.status).toBe(200);
+  //       await expect(res.json()).resolves.toMatchObject({"testActiveId": "test bet for test suite"});
+  //     },
   //   });
   // });
+
+  describe("Unauthenticated calls are rejected", () => {
+    beforeEach(() => {
+      getServerSession.mockResolvedValue(mockUnauthenticated);
+    });
+
+    test("Unauthenticated [id]/active", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: activeEndpoint,
+        paramsPatcher: (params) => (params.id = "testId"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+        },
+      });
+    });
+  });
 });
