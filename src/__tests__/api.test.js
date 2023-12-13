@@ -12,8 +12,8 @@ import { testApiHandler } from "next-test-api-route-handler";
 import { firebaseConfig } from "@/firebase-config";
 import { initializeApp, deleteApp } from "firebase/app";
 import userEndpoint from "../pages/api/[id]/index";
-// import historyEndpoint from "../pages/api/[id]/history";
 import activeEndpoint from "../pages/api/[id]/active";
+import historyEndpoint from "../pages/api/[id]/history";
 
 jest.mock("next-auth/next");
 
@@ -90,6 +90,44 @@ describe("Api testing", () => {
     });
   });
 
+  describe("Calls to data of other users are rejected", () => {
+    beforeEach(() => {
+      getServerSession.mockResolvedValue(mockAuthenticated);
+    });
+
+    test("Unauthenticated [id]/active", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: activeEndpoint,
+        paramsPatcher: (params) => (params.id = "notTestId"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You cannot access information of other users.",
+          });
+        },
+      });
+    });
+
+    test("Unauthenticated [id]/history", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: historyEndpoint,
+        paramsPatcher: (params) => (params.id = "notTestId"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You cannot access information of other users.",
+          });
+        },
+      });
+    });
+  });
+
   describe("Unauthenticated calls are rejected", () => {
     beforeEach(() => {
       getServerSession.mockResolvedValue(mockUnauthenticated);
@@ -104,6 +142,25 @@ describe("Api testing", () => {
           const res = await fetch();
           expect(res.ok).toBe(false);
           expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You must be logged in.",
+          });
+        },
+      });
+    });
+
+    test("Unauthenticated [id]/history", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: historyEndpoint,
+        paramsPatcher: (params) => (params.id = "testId"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You must be logged in.",
+          });
         },
       });
     });

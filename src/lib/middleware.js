@@ -8,6 +8,8 @@ export async function authenticated(request, response, next) {
   if (session) {
     await next(); // Authenticated, proceed to the next handler
   } else {
-    response.status(403).end("You must be signed in to access this endpoint.");
+    response
+      .status(401)
+      .json({ message: "You must be signed in to access this endpoint." });
   }
 }
