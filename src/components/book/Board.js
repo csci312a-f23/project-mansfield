@@ -11,7 +11,6 @@ export default function Board({ cart, setCart, currentLeague }) {
   // this is the implementation for the Odds api, it is working I just disabled it to make sure
   // that we don't reach the limit of our api
   const [games, setGames] = useState([]);
-
   useEffect(() => {
     (async () => {
       // update firebase possibly
@@ -22,6 +21,7 @@ export default function Board({ cart, setCart, currentLeague }) {
           "Content-Type": "application/json",
         },
       });
+
       // pull data
       const response = await fetch(`api/scores/${currentLeague.key}`);
       if (response.ok) {
