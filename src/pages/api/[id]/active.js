@@ -1,3 +1,4 @@
+import { getServerSession } from "next-auth";
 import {
   getDatabase,
   ref,
@@ -7,13 +8,27 @@ import {
   push,
   remove,
 } from "firebase/database";
+import { authOptions } from "../auth/[...nextauth]";
 
 import resolveBet from "../../../db/resolveBet";
 
 // GET, POST, PUT and DELETE the active bets
 
 export default async function handler(req, res) {
+  const session = await getServerSession(req, res, authOptions);
+  if (!session) {
+    res.status(401).json({ message: "You must be logged in." });
+    return;
+  }
+
   const { method, query } = req;
+  if (session.user.id !== query.id) {
+    res
+      .status(401)
+      .json({ message: "You cannot access information of other users." });
+    return;
+  }
+
   const db = getDatabase();
   const activeRef = ref(db, `active/${query.id}`);
 
