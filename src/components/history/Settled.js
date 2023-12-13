@@ -58,12 +58,12 @@ function Bet({ bet, number }) {
           {bet.Result > 0 ? (
             <div className={styles.result}>
               <h4>Result</h4>
-              <p>{`${bet.WinAmount}`} </p>
+              <p>{`${bet.Result}`} </p>
             </div>
           ) : (
             <div className={styles.resultNeg}>
               <h4>Result</h4>
-              <p>{`${bet.WinAmount}`} </p>
+              <p>{`${bet.Result}`} </p>
             </div>
           )}
         </div>

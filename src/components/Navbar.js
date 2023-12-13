@@ -69,6 +69,7 @@ export default function Navbar({ balance, setBalance }) {
             <a onClick={() => handleNavClick("logout")}>Logout</a>
           </div>
         </div>
+        <div className={styles.balance}>${balance}</div>
         {balance > 0 ? (
           <div className={styles.balance} data-testid="positiveBalance">
             ${balance}

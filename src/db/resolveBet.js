@@ -1,4 +1,4 @@
-import { ref, set, get, update, push, remove } from "firebase/database";
+import { ref, set, update, push, remove } from "firebase/database";
 
 function resolveBalance(bet, game) {
   const betType = bet.BetType;
@@ -56,43 +56,38 @@ function resolveBalance(bet, game) {
       return 0;
     }
   }
-  // console.log(
-  //   "away: " + awayscore + "home: " + homescore + "DID WIN? " + didWin,
-  // );
   return didWin ? bet.WinAmount : -bet.Amount;
 }
 
-export default function resolveBet(bet, query, tempGame, key, db) {
+export default function resolveBet(bet, query, game, key, db, user) {
   const historyRef = ref(db, `history/${query.id}`);
-  const userRef = ref(db, `users/${query.id}`);
+  const activeRef = ref(db, `active/${query.id}/${key}`);
 
-  if (tempGame && tempGame.completed) {
-    // resolve bet if the game is complete
-    // add bet to history
+  // resolve bet if the game is complete
+  if (game && game.completed) {
+    // delete bet from active table
+    remove(activeRef);
 
+    // payout and updates account Balance
+    const payout = resolveBalance(bet, game);
+
+    // update user info
+    const updates = {};
+    updates[`users/${query.id}`] = {
+      email: user.email,
+      username: user.username,
+      accountBalance: user.accountBalance + payout,
+    };
+
+    const newbet = bet;
+    newbet.AwayScore = game.scores[0].score;
+    newbet.HomeScore = game.scores[1].score;
+    newbet.Result = payout;
+
+    // add bet to history table
     const pushref = push(historyRef);
     set(pushref, bet);
 
-    // delete active bets
-    remove(ref(db, `active/${query.id}/${key}`));
-
-    const payout = resolveBalance(bet, tempGame);
-
-    // pay balance
-    get(userRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        const user = snapshot.val();
-        const updates = {};
-
-        updates[`users/${query.id}`] = {
-          email: user.email,
-          username: user.username,
-          accountBalance: user.accountBalance + payout,
-        };
-
-        update(ref(db), updates);
-      }
-    });
-    // console.log
+    update(ref(db), updates);
   }
 }

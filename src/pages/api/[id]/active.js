@@ -10,6 +10,7 @@ import {
 } from "firebase/database";
 import { authOptions } from "../auth/[...nextauth]";
 
+import data from "../../../../data/selectedsports.json";
 import resolveBet from "../../../db/resolveBet";
 
 // GET, POST, PUT and DELETE the active bets
@@ -36,8 +37,8 @@ export default async function handler(req, res) {
     // returns active bets
     case "GET": {
       onValue(activeRef, (snapshot) => {
-        const data = snapshot.val();
-        res.status(200).json(data);
+        const d = snapshot.val();
+        res.status(200).json(d);
       });
       break;
     }
@@ -67,23 +68,44 @@ export default async function handler(req, res) {
 
     // updating bets when game is completed
     case "PUT": {
-      const nflRef = ref(db, `scores/nfl`);
+      const leaguesList = [...data];
+      const leaguesRef = leaguesList.map((league) =>
+        ref(db, `scores/${league.key}`),
+      );
+      
+      const userRef = ref(db, `users/${query.id}`);
 
       // Get Active Bets
       const snapshot1 = await get(activeRef);
-      const data = snapshot1.val();
+      if (!snapshot1.exists()) {
+        res.status(200).json({ Feedback: "No Active bets found" });
+        break;
+      }
+      const bets = snapshot1.val();
 
-      // get nfl game data
-      const snapshot2 = await get(nflRef);
-      const games = snapshot2.val();
+      // get bet data
+      const keys = Object.keys(bets);
+      const values = Object.values(bets);
 
-      const keys = Object.keys(data);
-      const values = Object.values(data);
+      // Gets user data
+      const snapshot2 = await get(userRef);
+      const user = snapshot2.val();
 
-      // loop through games in firebase db and check if game's ID matches the bet's gameID
-      for (let i = 0; i < keys.length; i += 1) {
-        const tempGame = games.find((game) => game.id === values[i].GameID);
-        resolveBet(values[i], query, tempGame, keys[i], db);
+      // // loop through leagues and get games for each sports league
+      for (let i = 0; i < leaguesRef.length; i += 1) {
+        get(leaguesRef[i]).then((snap) => {
+          const games = snap.val();
+
+          // // loop through games in firebase db and check if game's ID matches the bet's gameID
+          for (let j = 0; j < keys.length; j += 1) {
+            const tempGame = Object.values(games).find(
+              (game) => game.id === values[j].GameID,
+            );
+            if (tempGame) {
+              resolveBet(values[j], query, tempGame, keys[j], db, user);
+            }
+          }
+        });
       }
 
       res.status(200).json({ succes: true });

@@ -15,6 +15,7 @@ export default function LogIn() {
   return (
     <div className={styles.login}>
       <h1>Mansfield Sports Book</h1>
+
       <LoginForm />
     </div>
   );
