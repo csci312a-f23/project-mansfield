@@ -14,6 +14,8 @@ import { initializeApp, deleteApp } from "firebase/app";
 import userEndpoint from "../pages/api/[id]/index";
 import activeEndpoint from "../pages/api/[id]/active";
 import historyEndpoint from "../pages/api/[id]/history";
+import oddsEndpoint from "../pages/api/odds/[league]";
+import scoresEndpoint from "../pages/api/scores/[league]";
 
 jest.mock("next-auth/next");
 
@@ -95,7 +97,7 @@ describe("Api testing", () => {
       getServerSession.mockResolvedValue(mockAuthenticated);
     });
 
-    test("Unauthenticated [id]/active", async () => {
+    test("Unauthorized [id]/active", async () => {
       await testApiHandler({
         rejectOnHandlerError: false,
         handler: activeEndpoint,
@@ -111,7 +113,7 @@ describe("Api testing", () => {
       });
     });
 
-    test("Unauthenticated [id]/history", async () => {
+    test("Unauthorized [id]/history", async () => {
       await testApiHandler({
         rejectOnHandlerError: false,
         handler: historyEndpoint,
@@ -160,6 +162,38 @@ describe("Api testing", () => {
           expect(res.status).toBe(401);
           await expect(res.json()).resolves.toMatchObject({
             message: "You must be logged in.",
+          });
+        },
+      });
+    });
+
+    test("Unauthenticated GET odds", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: oddsEndpoint,
+        paramsPatcher: (params) => (params.league = "testLeague"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You must be signed in to access this endpoint.",
+          });
+        },
+      });
+    });
+
+    test("Unauthenticated GET scores", async () => {
+      await testApiHandler({
+        rejectOnHandlerError: false,
+        handler: scoresEndpoint,
+        paramsPatcher: (params) => (params.league = "testLeague"),
+        test: async ({ fetch }) => {
+          const res = await fetch();
+          expect(res.ok).toBe(false);
+          expect(res.status).toBe(401);
+          await expect(res.json()).resolves.toMatchObject({
+            message: "You must be signed in to access this endpoint.",
           });
         },
       });
