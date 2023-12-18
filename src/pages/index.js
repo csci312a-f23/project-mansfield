@@ -28,7 +28,7 @@ export default function Home() {
 
     // Clearing the interval
     return () => clearInterval(interval);
-  }, [count]);
+  }, [count, session]);
 
   return session ? (
     <div className={styles.home}>

@@ -27,6 +27,8 @@ export default function Navbar({ balance, setBalance }) {
         }
       }
     })();
+    // we can disable here because this is the only place where we change the balance
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [session]);
 
   const router = useRouter();
