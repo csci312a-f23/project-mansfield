@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBZtVOlyukfswcozZI9Gv4b7Zr_b5msOsk",
+  apiKey: process.env.FIREBASE_KEY,
   authDomain: "project-mansfield-60c83.firebaseapp.com",
   databaseURL: "https://project-mansfield-60c83-default-rtdb.firebaseio.com",
   projectId: "project-mansfield-60c83",
