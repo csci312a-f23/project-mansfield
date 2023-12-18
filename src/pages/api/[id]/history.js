@@ -1,7 +1,7 @@
 // GET and POST bet history given the userId
 
 import { getServerSession } from "next-auth";
-import { getDatabase, ref, onValue, set, push } from "firebase/database";
+import { getDatabase, ref, get, set, push } from "firebase/database";
 import { authOptions } from "../auth/[...nextauth]";
 
 export default async function handler(req, res) {
@@ -24,9 +24,10 @@ export default async function handler(req, res) {
 
   switch (method) {
     case "GET": {
-      onValue(historyRef, (snapshot) => {
-        const data = snapshot.val();
-        res.status(200).json(data);
+      await get(historyRef).then((snapshot) => {
+        if (snapshot.exists()) {
+          res.status(200).json(snapshot.val());
+        }
       });
       break;
     }

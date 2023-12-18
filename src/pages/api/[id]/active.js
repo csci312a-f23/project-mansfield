@@ -36,9 +36,10 @@ export default async function handler(req, res) {
   switch (method) {
     // returns active bets
     case "GET": {
-      onValue(activeRef, (snapshot) => {
-        const d = snapshot.val();
-        res.status(200).json(d);
+      await get(activeRef).then((snapshot) => {
+        if (snapshot.exists()) {
+          res.status(200).json(snapshot.val());
+        }
       });
       break;
     }
@@ -72,7 +73,7 @@ export default async function handler(req, res) {
       const leaguesRef = leaguesList.map((league) =>
         ref(db, `scores/${league.key}`),
       );
-      
+
       const userRef = ref(db, `users/${query.id}`);
 
       // Get Active Bets
