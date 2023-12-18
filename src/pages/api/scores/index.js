@@ -60,11 +60,13 @@ export default async function handler(req, res) {
         ret[l] = {};
       });
       allGames.forEach((games) => {
-        games.forEach((game) => {
-          const [league, id] = [game.sport_key, game.id];
-          ret[league][id] = game;
-          updates[`/${game.sport_key}/${game.id}`] = game;
-        });
+        if (games) {
+          games.forEach((game) => {
+            const [league, id] = [game.sport_key, game.id];
+            ret[league][id] = game;
+            updates[`/${game.sport_key}/${game.id}`] = game;
+          });
+        }
       });
       update(gamesRef, updates);
       res.status(200).json(ret);
